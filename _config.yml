@@ -1,6 +1,5 @@
 name: ClojureBridge Community Docs
 markdown: kramdown
 pygments: true
-baseurl: /CommunityDocs
-port: 4444
+baseurl: /community-docs
 encoding: UTF-8
