@@ -1,0 +1,48 @@
+---
+layout: docs
+title: ClojureBridge Community Docs
+---
+
+<div id="home">
+  <h1>Bite! Clojure</h1>
+  <p class="lead">
+    Welcome! This web site has a lot of (should be in near future) documents
+    for the ClojureBridge event. The documents will be used as a
+    supportive material. ClojureBridge has a main stream
+    document (on going now); however, only one document would be
+    unable to fit/satisfy all attendees of the events. Some might be
+    programmers of other languages, some may be designers, or others
+    are, probably, beginners of programming.
+    For attendees of various backgounds, providing extra
+    labs and explanations is a purpose of the documents here.
+    So that everybody can cheerfully "Bite! Clojure".
+  </p>
+  <p class="lead">
+    The documents assume that the attendees will try lab problems with
+    helps of coaches. Each document has advices to the coaches
+    also(should be there). If you will volunteer as a coach, have a look at the advices
+    to know what the attendees should learn.
+  </p>
+  <p class="lead">
+    <b>Help Wanted!! GIVE US PULL REQUEST!</b><br/>
+    Yes, we really want helps from Clojure community. It is very hard
+    for one or two people to write documents to cover a computer
+    language.
+    Gratefully, at the unsession of Clojure/Conj, also, ClojureBridge
+    mailing list, we have gotten so many ideas and voices of "I can
+    help". What an awesome community!
+    If we can get your help to grow the documents here, that will be
+    SUPER AWESOME!!
+    <br/>
+    <b>Fork the repo, write a document, and give us a pull request!</b>
+    We will merge your document, which will be a material at
+    ClojureBridge events. <a href="#">How to Contribute</a> guides you
+    how to write.
+  </p>
+</p>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>

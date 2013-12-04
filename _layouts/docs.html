@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<div class="row row-offcanvas row-offcanvas-right">
+  <div class="col-lg-9">
+    <div class="jumbotron">
+      {{ content }}
+    </div>
+  </div>
+  <div class="col-lg-3 sidebar-offcanvas" id="sidebar"
+       role="navigation">
+    <div class="jumbotron">
+      {% include content_list.html %}
+    </div>
+  </div>
+</div>

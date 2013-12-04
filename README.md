@@ -1,1 +1,4 @@
-Here're some supportive materials for ClojureBridge workshop.
+CommunityDocs
+=============
+
+Supportive materials for ClojureBridge workshop
