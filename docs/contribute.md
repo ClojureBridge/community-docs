@@ -21,12 +21,14 @@ Below are steps to contribute.
 
 - Do some cool stuff
 
-    Since we are using Github pages, our contents are provided by [Jekyll](http://jekyllrb.com/docs/home/). Each document is expected to be written in Markdown format. In addition, be aware the document should have [Front-matter](http://jekyllrb.com/docs/frontmatter/) on the top. For example, this document has the front-matter below.
+    Since we are using Github pages, our contents are provided by [Jekyll](http://jekyllrb.com/docs/home/). Each document is expected to be written in Markdown format. In addition, be aware the document should have [Front-matter](http://jekyllrb.com/docs/frontmatter/) on the top. For example, this document has the front-matter below. When you will add a new documnt,
 
     - Don't change line 2, `layout: docs`. The docs style is for all documents.
     - Write the document title
     - Write appropriate permalink, which starts with `/docs/`.
     - Write your github id (don't write @, which causes rendering error)
+
+    In the document,     
 
     {% highlight yaml linenos %}
     ---
