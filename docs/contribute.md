@@ -5,30 +5,28 @@ permalink: /docs/contribute/
 author: yokolet
 ---
 
-## How to Contribute
-
 This web site is [Github Pages](http://pages.github.com/).
 Right after your pull request is merged, the contents will be updated. Handy!
 But, we need to follow some manners of Github pages to make that happen.
 Below are simplified explanation of Github pages and our specific rules.
-Please read before your pull request gets rejected. Don't worry, rules are simple.
+Please read before start working. It won't take long. Rules are simple.
 
-Below are steps to contribute.
+Steps:
 
 - Fork the repository
 
     The pages are in `gh-pages` branch of [ClojureBridge/community-docs](https://github.com/ClojureBridge/community-docs) repository. The branch name expresses it is Github pages.
 
-- Do some cool stuff
+- Write or edit contents
 
-    Since we are using Github pages, our contents are provided by [Jekyll](http://jekyllrb.com/docs/home/). Each document is expected to be written in Markdown format. In addition, be aware the document should have [Front-matter](http://jekyllrb.com/docs/frontmatter/) on the top. For example, this document has the front-matter below. When you will add a new documnt,
+    Since we are using Github pages, our contents are provided by [Jekyll](http://jekyllrb.com/docs/home/). Currently, we support HTML, Markdown and Org-mode formats. Each document should have [Front-matter](http://jekyllrb.com/docs/frontmatter/) on the top. This is very important. Don't forget to add that. For example, this document has the front-matter below. When you will create a new documnt,
 
-    - Don't change line 2, `layout: docs`. The docs style is for all documents.
-    - Write the document title
-    - Write appropriate permalink, which starts with `/docs/`.
+    - Create a document file under `docs` directory. Based on the extensions (.html, .md, .org), an appropriate converter works.
+    - Add `layout: docs`. The `docs` layout is for all documents. Don't change.
+    - Write the document title.
+    - Write a unique permalink, which starts with `/docs/`.
     - Write your github id (don't write @, which causes rendering error)
 
-    In the document,     
 
     {% highlight yaml linenos %}
     ---
@@ -38,6 +36,34 @@ Below are steps to contribute.
     author: yokolet
     --- {% endhighlight %}
 
+- Additional Info
+
+  - What to write
+
+    The purpose of the documents here is to provide lab works for ClojureBridge attendees. They have coaches and coaches' helps. Write more examples than explaining it for attendees. Then, write advices for coaches what they can teach about the examples.
+
+    Add a difficulty level of the lab work: easy, intermediate, difficult. This will help attendees and coaches to choose a good one considering programming background. It might be fun to add "most difficult" lab works mainly for coaches.
+
+  - Syntax
+
+    For HTML, and Markdown, the site is setup to use [Pygments](http://pygments.org/docs/) for syntax highlighter. Please look at jekyll document, [Writing posts](http://jekyllrb.com/docs/posts/), for details. For Org-mode, `#+begin_src clojure ...#+end_src` syntax highlights the code.
+
+  - Setup test environment on your computer
+
+    1. Install Ruby and Python
+    2. Install Pygments (http://pygments.org/docs/installation/)
+    3. Install bundler gem to your Ruby by `gem install bundler`
+    4. Install some gems by `bundle install` at this project top directory<br/><br/>
+
+  - Run test server
+
+    On the project top directory, type `jekyll serve --watch`. The test server start running at port 4444. Go to `http://localhost:4444/community-docs/`. `--watch` option reflects the changes immediately.
+
+  - Document examples
+
+    * Markdown: `/docs/contribute.md` (this document)
+    * HTML: `/index.html` ("Home" page)
+    * Org-mode: `/docs/org-mode-sample.org` [see sample page]({{ site.baseurl}}/docs/sample-document/)<br/><br/>
 
 - Make a pull request
 
@@ -83,7 +109,7 @@ Even though it is small, correcting errors, confusing explanation, etc is import
 
 - Design Love
 
-    Love, love, love! from your contributions in this area.
+    LOVE! <3, <3, from your contributions in this area.
 Sadly, a main author of this web site (@yokolet) is bad at it. sigh...
 Somehow, she could set up the web site like this, she knows it just has minimum.
 
