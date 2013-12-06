@@ -19,9 +19,9 @@ Steps:
 
 - Write or edit contents
 
-    Since we are using Github pages, our contents are provided by [Jekyll](http://jekyllrb.com/docs/home/). Currently, we support HTML, Markdown and Org-mode formats. Each document should have [Front-matter](http://jekyllrb.com/docs/frontmatter/) on the top. This is very important. Don't forget to add that. For example, this document has the front-matter below. When you will create a new documnt,
+    Since we are using Github pages, our contents are provided by [Jekyll](http://jekyllrb.com/docs/home/). Currently, we support HTML and Markdown formats. Each document should have [Front-matter](http://jekyllrb.com/docs/frontmatter/) on the top. This is very important. Don't forget to add that. For example, this document has the front-matter below. When you will create a new documnt,
 
-    - Create a document file under `docs` directory. Based on the extensions (.html, .md, .org), an appropriate converter works.
+    - Create a document file under `docs` directory.
     - Add `layout: docs`. The `docs` layout is for all documents. Don't change.
     - Write the document title.
     - Write a unique permalink, which starts with `/docs/`.
@@ -46,7 +46,7 @@ Steps:
 
   - Syntax
 
-    For HTML, and Markdown, the site is setup to use [Pygments](http://pygments.org/docs/) for syntax highlighter. Please look at jekyll document, [Writing posts](http://jekyllrb.com/docs/posts/), for details. For Org-mode, `#+begin_src clojure ...#+end_src` syntax highlights the code.
+    For HTML, and Markdown, the site is setup to use [Pygments](http://pygments.org/docs/) for syntax highlighter. Please look at jekyll document, [Writing posts](http://jekyllrb.com/docs/posts/), for details.
 
   - Setup test environment on your computer
 
@@ -62,8 +62,7 @@ Steps:
   - Document examples
 
     * Markdown: `/docs/contribute.md` (this document)
-    * HTML: `/index.html` ("Home" page)
-    * Org-mode: `/docs/org-mode-sample.org` [see sample page]({{ site.baseurl}}/docs/sample-document/)<br/><br/>
+    * HTML: `/index.html` ("Home" page)<br/><br/>
 
 - Make a pull request
 

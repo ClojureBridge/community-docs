@@ -1,7 +1,6 @@
 name: ClojureBridge Community Docs
 markdown: kramdown
 pygments: true
-gem: [org-ruby]
 relative_permalinks: false
 baseurl: /community-docs
 encoding: UTF-8
