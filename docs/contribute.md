@@ -19,7 +19,7 @@ Steps:
 
 - Write or edit contents
 
-    Since we are using Github pages, our contents are provided by [Jekyll](http://jekyllrb.com/docs/home/). Currently, we support HTML and Markdown formats. Each document should have [Front-matter](http://jekyllrb.com/docs/frontmatter/) on the top. This is very important. Don't forget to add that. For example, this document has the front-matter below. When you will create a new documnt,
+    Since we are using Github pages, our contents are provided by [Jekyll](http://jekyllrb.com/docs/home/). Currently, Github pages support HTML and Markdown formats (and textile, probably). Each document should have [Front-matter](http://jekyllrb.com/docs/frontmatter/) on the top. This is very important. Don't forget to add that. For example, this document has the front-matter below. When you will create a new documnt,
 
     - Create a document file under `docs` directory.
     - Add `layout: docs`. The `docs` layout is for all documents. Don't change.
