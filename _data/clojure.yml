@@ -1,0 +1,86 @@
+- title: Comment
+  permalink: /docs/clojure/comment/
+
+- title: Truthiness
+  permalink: /docs/clojure/truthiness/
+
+- title: Primitive Types
+  permalink: /docs/clojure/primitive-types/
+
+- title: String
+  permalink: /docs/clojure/string/
+
+- title: Assignment <code>def</code>
+  permalink: /docs/clojure/def/
+
+- title: Assignment <code>let</code>
+  permalink: /docs/clojure/let/
+
+- title: Destructure
+  permalink: /docs/clojure/destructure/
+
+- title: Data Structure <code>list</code>
+  permalink: /docs/clojure/list/
+
+- title: Data Structure <code>vector</code>
+  permalink: /docs/clojure/vector/
+
+- title: Data Structure <code>map</code>
+  permalink: /docs/clojure/hash/
+
+- title: Data Structure <code>lazy-seq</code>
+  permalink: /docs/clojure/lazy-seq/
+
+- title: Basics of Function
+  permalink: /docs/clojure/function-creation/
+
+- title: Anonymous Function
+  permalink: /docs/clojure/anonymous-function/
+
+- title: High Order Function
+  permalink: /docs/clojure/high-order-function/
+
+- title: Polymorphism
+  permalink: /docs/clojure/polymorphism/
+
+- title: Condition <code>case</code>
+  permalink: /docs/clojure/case/
+
+- title: Condition <code>if</code>
+  permalink: /docs/clojure/if/
+
+- title: Condition <code>cond</code>
+  permalink: /docs/clojure/cond/
+
+- title: Core Function <code>map</code>
+  permalink: /docs/clojure/map/
+
+- title: Core Function <code>filter</code>
+  permalink: /docs/clojure/filter/
+
+- title: Core Function <code>reduce</code>
+  permalink: /docs/clojure/reduce/
+
+- title: Core Function <code>range</code>
+  permalink: /docs/clojure/range/
+
+- title: Core Function <code>drop</code>
+  permalink: /docs/clojure/drop/
+
+- title: Core Function <code>take</code>
+  permalink: /docs/clojure/take/
+
+- title: Core Function <code>iterate</code>
+  permalink: /docs/clojure/iterate/
+
+- title: Loop <code>for</code>
+  permalink: /docs/clojure/for/
+
+- title: Loop <code>recur</code>
+  permalink: /docs/clojure/recur/
+
+- title: Namespace
+  permalink: /docs/clojure/namespace/
+
+- title: Work With Libraries
+  permalink: /docs/clojure/libraries/

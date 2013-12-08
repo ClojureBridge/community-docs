@@ -17,15 +17,19 @@ Steps:
 
     The pages are in `gh-pages` branch of [ClojureBridge/community-docs](https://github.com/ClojureBridge/community-docs) repository. The branch name expresses it is Github pages.
 
-- Write or edit contents
+- Edit or create new contents
 
-    Since we are using Github pages, our contents are provided by [Jekyll](http://jekyllrb.com/docs/home/). Currently, Github pages support HTML and Markdown formats (and textile, probably). Each document should have [Front-matter](http://jekyllrb.com/docs/frontmatter/) on the top. This is very important. Don't forget to add that. For example, this document has the front-matter below. When you will create a new documnt,
+    Since we are using Github pages, our contents are provided by [Jekyll](http://jekyllrb.com/docs/home/). Currently, Github pages support HTML and Markdown formats (and textile, probably). Each document should have [Front-matter](http://jekyllrb.com/docs/frontmatter/) on the top. This is very important. Don't forget to add that. For example, this document has the front-matter below.
 
-    - Create a document file under `docs` directory.
-    - Add `layout: docs`. The `docs` layout is for all documents. Don't change.
-    - Write the document title.
-    - Write a unique permalink, which starts with `/docs/`.
-    - Write your github id (don't write @, which causes rendering error)
+    When you write contents listed on the right, Template documents are under docs/clojure or docs/clojure-script directory. Those templates are written in Markdown format. If you prefer HTML, change the file extension from md to html. In the front-matter, write your github id on the right of `author:`.
+
+    When you will create a new documnt, create a file under `docs/clojure` or `docs/clojure-script` directory. However, you may create a new subdirectory if you think the document is other one.<br/><br/>
+
+
+    - `layout: docs`. The `docs` layout is for all documents. Don't change.
+    - `title: something` The document title.
+    - `permalink: somelink` Ths documents relative URL
+    - `author: github-id` Write your github id (don't write @, which causes rendering error)
 
 
     {% highlight yaml linenos %}

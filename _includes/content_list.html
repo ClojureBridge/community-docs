@@ -1,6 +1,25 @@
-<h4>Getting Started</h4>
-<ul>
-  <li><h5><a href="{{ site.baseurl }}/docs/helloworld/">Hello World</a></h5></li>
-</ul>
-<h4>Functions</h4>
-<h4>ClojureScript</h4>
+<div class="container text-left" style="width: 400px;">
+  <h4>Getting Started</h4>
+  {% for topic in site.data.getting-started %}
+    <h5>
+      <span class="glyphicon glyphicon-wrench"></span>
+      <a href="{{ site.baseurl }}{{ topic.permalink }}">{{topic.title}}</a>
+    </h5>
+  {% endfor %}
+  <br/>
+  <h4>Clojure</h4>
+  {% for topic in site.data.clojure %}
+    <h5>
+      <span class="glyphicon glyphicon-wrench"></span>
+      <a href="{{ site.baseurl }}{{ topic.permalink }}">{{topic.title}}</a>
+    </h5>
+  {% endfor %}
+  <br/>
+  <h4>ClojureScript</h4>
+  {% for topic in site.data.clojure-script %}
+    <h5>
+      <span class="glyphicon glyphicon-wrench"></span>
+      <a href="{{ site.baseurl }}{{ topic.permalink }}">{{topic.title}}</a>
+    </h5>
+  {% endfor %}
+</div>

@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Hello World
-permalink: /docs/helloworld/
+permalink: /docs/getting-started/helloworld/
 level: easy
 author: yokolet
 ---
@@ -23,13 +23,14 @@ user=> (pr-str "Hello World")
 
 - Advice to coaches
 
-    Explain the difference above (if necessary). For example, `prn` is for `reader`, while `println` is for human consumption. <br/><br/>
+    If this is the first Clojure code, please explain Clojure's syntax, parenthesis, function, argument.
+    Additionallu, explain the difference above (if necessary). For example, `prn` is for `reader`, while `println` is for human consumption. <br/><br/>
 
 
 #### Hello World by runnable program
 Create a bran new Clojure project:
 {% highlight bash %}
-lein new helloworld
+bash-3.2$ lein new helloworld
 {% endhighlight %}
 
 Add `main` to `project.clj` (line 7):

@@ -36,8 +36,6 @@ GEM
       rb-kqueue (>= 0.2)
     maruku (0.6.1)
       syntax (>= 1.0.0)
-    org-ruby (0.8.2)
-      rubypants (>= 0.2.0)
     posix-spawn (0.3.6)
     pygments.rb (0.5.4)
       posix-spawn (~> 0.3.6)
@@ -49,7 +47,6 @@ GEM
       ffi (>= 0.5.0)
     rdiscount (2.1.7)
     redcarpet (2.3.0)
-    rubypants (0.2.0)
     safe_yaml (0.9.7)
     syntax (1.0.0)
     yajl-ruby (1.1.0)
@@ -59,4 +56,3 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
-  org-ruby
