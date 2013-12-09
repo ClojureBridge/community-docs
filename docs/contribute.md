@@ -23,12 +23,13 @@ Steps:
 
     When you write contents listed on the right, Template documents are under docs/clojure or docs/clojure-script directory. Those templates are written in Markdown format. If you prefer HTML, change the file extension from md to html. In the front-matter, write your github id on the right of `author:`.
 
-    When you will create a new documnt, create a file under `docs/clojure` or `docs/clojure-script` directory. However, you may create a new subdirectory if you think the document is other one.<br/><br/>
+    When you will create a new documnt, create a file under `docs/clojure` or `docs/clojure-script` directory. However, you may create a new subdirectory if you think the document is not of those. Currently, contents lists are mannually created. Go to _data directory and add title and permalink. If you created a new subdirectory, add a new file under _data. Also, edit _includes/content_list.html<br/><br/>
 
 
     - `layout: docs`. The `docs` layout is for all documents. Don't change.
     - `title: something` The document title.
-    - `permalink: somelink` Ths documents relative URL
+    - `permalink: somelink` This document's relative URL
+    - `level: easy` The easiness of the lab work. One of easy, intermediate, difficult.
     - `author: github-id` Write your github id (don't write @, which causes rendering error)
 
 
@@ -37,6 +38,7 @@ Steps:
     layout: docs
     title: How to Contribute
     permalink: /docs/contribute/
+    level: 
     author: yokolet
     --- {% endhighlight %}
 
