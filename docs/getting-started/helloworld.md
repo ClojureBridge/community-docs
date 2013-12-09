@@ -10,6 +10,25 @@ This is always the first tiny baby step to learn programing language.
 Let's try "Hello, World!" in Clojure.
 
 #### On repl
+
+Start repl. When you use Leiningen, type `lein repl` on Terminal (Command Prompt):
+{% highlight bash %}
+bash-3.2$ lein repl
+nREPL server started on port 59553 on host 127.0.0.1
+REPL-y 0.2.1
+Clojure 1.5.1
+    Docs: (doc function-name-here)
+          (find-doc "part-of-name-here")
+  Source: (source function-name-here)
+ Javadoc: (javadoc java-object-or-class-here)
+    Exit: Control+D or (exit) or (quit)
+ Results: Stored in vars *1, *2, *3, an exception in *e
+
+user=>
+{% endhighlight %}
+
+Type below on repl:
+
 {% highlight clojure %}
 user=> (prn "Hello World")
 "Hello World"
