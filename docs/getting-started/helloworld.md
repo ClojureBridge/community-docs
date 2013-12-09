@@ -53,24 +53,9 @@ bash-3.2$ lein new helloworld
 {% endhighlight %}
 
 Add `main` to `project.clj` (line 7):
-{% highlight clojure linenos %}
-(defproject helloworld "0.1.0-SNAPSHOT"
-  :description "FIXME: write description"
-  :url "http://example.com/FIXME"
-  :license {:name "Eclipse Public License"
-            :url "http://www.eclipse.org/legal/epl-v10.html"}
-  :dependencies [[org.clojure/clojure "1.5.1"]]
-  :main helloworld.core)
-{% endhighlight %}
+{% gist 7867336 %}
 
-Edit `src/helloworld/core.clj` to look like below:
-{% highlight clojure linenos %}
-(ns helloworld.core)
-
-(defn -main []
-  "I can say 'Hello World'."
-  (println "Hello, World!"))
-{% endhighlight %}
+Edit `src/helloworld/core.clj` to look like below: {% gist 7867298 %} 
 
 Run the program:
 {% highlight bash %}

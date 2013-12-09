@@ -50,9 +50,9 @@ Steps:
 
     Add a difficulty level of the lab work: easy, intermediate, difficult. This will help attendees and coaches to choose a good one considering programming background. It might be fun to add "most difficult" lab works mainly for coaches.
 
-  - Syntax
+  - Syntax highliter
 
-    For HTML, and Markdown, the site is setup to use [Pygments](http://pygments.org/docs/) for syntax highlighter. Please look at jekyll document, [Writing posts](http://jekyllrb.com/docs/posts/), for details.
+    For HTML, and Markdown, the site is setup to use [Pygments](http://pygments.org/docs/) for syntax highlighter. Please look at jekyll document, [Writing posts](http://jekyllrb.com/docs/posts/), for details. Alternatively, you can embed gist by gist tag. See "Gist" section of [Templates](http://jekyllrb.com/docs/templates/).
 
   - Setup test environment on your computer
 
