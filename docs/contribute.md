@@ -67,7 +67,7 @@ Steps:
 
   - Document examples
 
-    * Markdown: `/docs/contribute.md` (this document)
+    * Markdown: `/docs/getting-started/helloworld.md` (Hello World of Getting Started)
     * HTML: `/index.html` ("Home" page)<br/><br/>
 
 - Make a pull request
