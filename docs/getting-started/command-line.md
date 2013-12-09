@@ -24,7 +24,7 @@ The result may vary, but `java` command should work and reports it's version.
 
 - Advice to coaches
 
-    Please check every attedees have Java installed and it's version. Leiningen works on JDK 6 and later.
+    Please check every attedee has Java installed and it's version. Leiningen works on JDK 6 and later.
 
 
 Try some more commands. These commands are used to explore directories:
@@ -48,4 +48,4 @@ bash-3.2$ pwd
 
 - Advice to coaches
 
-    Explain what commnds do what, berifly. Introduce more commands if necessary. However, this lab should not take long.
+    Berifly, explain what commnds do what. Introduce more commands if necessary. However, this lab should not take long.

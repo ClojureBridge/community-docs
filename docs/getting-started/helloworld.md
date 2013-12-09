@@ -42,8 +42,8 @@ user=> (pr-str "Hello World")
 
 - Advice to coaches
 
-    If this is the first Clojure code, please explain Clojure's syntax, parenthesis, function, argument.
-    Additionallu, explain the difference above (if necessary). For example, `prn` is for `reader`, while `println` is for human consumption. <br/><br/>
+    If this is the first Clojure code, please explain Clojure's syntax; parenthesis, function, argument, etc.
+    Additionally, explain the difference above (if necessary). For example, `prn` is for `reader`, while `println` is for human consumption. <br/><br/>
 
 
 #### Hello World by runnable program
