@@ -9,8 +9,7 @@ author: yokolet
 Is it true or false? This test is used very often while coding.
 A form of testing true/false may not straight forward.
 Sometimes it is a result of function, a variable or combination of those.
-
-Try and see what makes it true or false.
+But, the rule is simple. Try examples and see what makes it true or false.
 
 
 #### On repl
@@ -48,14 +47,17 @@ user=> (if true :it-is-truthy :it-isn't-truthy)
 :it-is-truthy
 user=> (if 2 :it-is-truthy :it-isn't-truthy)
 :it-is-truthy
+
 user=> (if false :it-isn't-falsey :it-is-falsey)
 :it-is-falsey
 user=> (if nil :it-isn't-falsey :it-is-falsey)
 :it-is-falsey
+
 user=> (if-not true :it-isn't-truthy :it-is-truthy)
 :it-is-truthy
 user=> (if-not false :it-is-falsey :it-isn't-falsey)
 :it-is-falsey
+
 user=> (if-not (= 3/2 9/6) :it-isn't-truthy :it-is-truthy)
 :it-is-truthy
 {% endhighlight %}

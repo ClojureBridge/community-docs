@@ -4,8 +4,8 @@
 - title: Truthiness
   permalink: /docs/clojure/truthiness/
 
-- title: Primitive Types
-  permalink: /docs/clojure/primitive-types/
+- title: Types
+  permalink: /docs/clojure/types/
 
 - title: String
   permalink: /docs/clojure/string/
