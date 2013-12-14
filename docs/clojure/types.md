@@ -95,6 +95,7 @@ user=> ; and more
 - Advice to coaches
 
     Please focus on basic types here. There are other labs for data structures.
+    However, if the attendees don't know what is data structure, it will be nice to explain a little.
     Other types are optional. Probably, we don't need to care much about examples in other types.
 
 

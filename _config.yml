@@ -1,4 +1,4 @@
-name: ClojureBridge Community Docs
+name: Community Docs
 markdown: kramdown
 pygments: true
 relative_permalinks: false

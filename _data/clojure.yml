@@ -1,5 +1,6 @@
 - title: Comment
   permalink: /docs/clojure/comment/
+  todo: true
 
 - title: Truthiness
   permalink: /docs/clojure/truthiness/
@@ -9,78 +10,104 @@
 
 - title: String
   permalink: /docs/clojure/string/
+  todo: true
 
 - title: Assignment <code>def</code>
   permalink: /docs/clojure/def/
+  todo: true
 
 - title: Assignment <code>let</code>
   permalink: /docs/clojure/let/
+  todo: true
 
 - title: Destructure
   permalink: /docs/clojure/destructure/
+  todo: true
 
 - title: Data Structure <code>list</code>
   permalink: /docs/clojure/list/
+  todo: true
 
 - title: Data Structure <code>vector</code>
   permalink: /docs/clojure/vector/
+  todo: true
 
 - title: Data Structure <code>map</code>
   permalink: /docs/clojure/hash/
+  todo: true
 
 - title: Data Structure <code>lazy-seq</code>
   permalink: /docs/clojure/lazy-seq/
+  todo: true
 
 - title: Basics of Function
   permalink: /docs/clojure/function-creation/
+  todo: true
 
 - title: Anonymous Function
   permalink: /docs/clojure/anonymous-function/
+  todo: true
 
 - title: High Order Function
   permalink: /docs/clojure/high-order-function/
+  todo: true
 
 - title: Polymorphism
   permalink: /docs/clojure/polymorphism/
+  todo: true
 
 - title: Condition <code>case</code>
   permalink: /docs/clojure/case/
+  todo: true
 
 - title: Condition <code>if</code>
   permalink: /docs/clojure/if/
+  todo: true
 
 - title: Condition <code>cond</code>
   permalink: /docs/clojure/cond/
+  todo: true
 
 - title: Core Function <code>map</code>
   permalink: /docs/clojure/map/
+  todo: true
 
 - title: Core Function <code>filter</code>
   permalink: /docs/clojure/filter/
+  todo: true
 
 - title: Core Function <code>reduce</code>
   permalink: /docs/clojure/reduce/
+  todo: true
 
 - title: Core Function <code>range</code>
   permalink: /docs/clojure/range/
+  todo: true
 
 - title: Core Function <code>drop</code>
   permalink: /docs/clojure/drop/
+  todo: true
 
 - title: Core Function <code>take</code>
   permalink: /docs/clojure/take/
+  todo: true
 
 - title: Core Function <code>iterate</code>
   permalink: /docs/clojure/iterate/
+  todo: true
 
 - title: Loop <code>for</code>
   permalink: /docs/clojure/for/
+  todo: true
 
 - title: Loop <code>recur</code>
   permalink: /docs/clojure/recur/
+  todo: true
 
 - title: Namespace
   permalink: /docs/clojure/namespace/
+  todo: true
 
 - title: Work With Libraries
   permalink: /docs/clojure/libraries/
+  todo: true
