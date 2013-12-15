@@ -6,7 +6,7 @@ level: easy
 author: yokolet
 ---
 
-Which one is bigger, `nil` and `0`?<br/>
+Which one is bigger, `nil` or `0`?<br/>
 Yes, it is a weird question since nil and 0 are completely different type of things.
 
 {% highlight clojure %}
@@ -101,7 +101,7 @@ user=> ; and more
 
 #### Comparison and Equalities
 
-Now, we know more about types. Let's try some comparisons. Below are few examples, try our own comparison or equalities.
+Now, we know more about types. Let's try some comparisons. Below are few examples, try your own comparison or equalities.
 
 {% highlight clojure %}
 user=> ; number types are comparable even though types are different
@@ -111,14 +111,16 @@ true
 user=> (< 1N 4/3)
 true
 
-user=> ; Clojure compares numbers only
-
-user=> (< "a" "b")
+user=> (< "a" "b") ; Clojure compares numbers only
 
 ClassCastException java.lang.String cannot be cast to java.lang.Number  clojure.lang.Numbers.lt (Numbers.java:219)
 
-user=> ; these look the same, but not
+user=> (= 4/3 28/21) ; Both are the Ratio type whose values are the same
+true
 
-user=> (= (fn [] ()) (fn [] ()))
+user=> (= 1 1.0) ; looks the same values, but types are different
+false
+
+user=> (= (fn [] ()) (fn [] ())) ; also, these look the same, but not
 false
 {% endhighlight %}
