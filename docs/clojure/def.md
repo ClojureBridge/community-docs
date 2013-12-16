@@ -82,3 +82,9 @@ user=> (def 'abc "abc")
 CompilerException java.lang.RuntimeException: First argument to def must be a Symbol, compiling:(NO_SOURCE_PATH:1:1)
 user=> ; wow, confusing error message. but we don't need quote for var-name
 {% endhighlight %}
+
+- Advice to coaches
+
+    The lab is to use Vars after those are bound.
+    If attendees haven't studied how to write function, lab using function is optional.
+    The last example is also optional.
