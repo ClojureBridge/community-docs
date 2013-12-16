@@ -81,8 +81,8 @@ user=> (type Boolean) ; Java's Boolean class
 java.lang.Class
 user=> (type +) ; + operator
 clojure.core$_PLUS_
-user=> (type +) ; / operator
-clojure.core$_PLUS_
+user=> (type /) ; / operator
+clojure.core$_SLASH_
 user=> (type (fn [] ())) ; function
 user$eval1158$fn__1159
 user=> (type #"[a-z]*") ; regular expression

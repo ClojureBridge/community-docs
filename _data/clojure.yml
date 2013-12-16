@@ -14,7 +14,6 @@
 
 - title: Assignment <code>def</code>
   permalink: /docs/clojure/def/
-  todo: true
 
 - title: Assignment <code>let</code>
   permalink: /docs/clojure/let/
