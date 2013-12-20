@@ -33,6 +33,11 @@ user=> ; what's the difference?
 
     If attendees don't know what is a variable, please explain briefly.
     The difference between `my-number` and `user/my-number` would be worth mentioning.
+    Precisely, a namespace will have a new binding from Symbol to Var
+    when def function is used.
+    Then, each Var will have its value.
+
+
     Also, it would be helpful to talk about global Vars and namespaces.
     However, the namespace has it's own section. Don't need to be in detail.
 
@@ -77,14 +82,26 @@ user=> (ten-times 6)
 
 user=> (type 'abc)
 clojure.lang.Symbol
-user=> (def 'abc "abc")
+user=> (def 'abc 123)
 
 CompilerException java.lang.RuntimeException: First argument to def must be a Symbol, compiling:(NO_SOURCE_PATH:1:1)
-user=> ; wow, confusing error message. but we don't need quote for var-name
+user=> ; Don't put quote before Var name. It is interpretted as (def (quote abc) 123).
 {% endhighlight %}
 
 - Advice to coaches
 
     The main purpose of this lab is to learn how to use Vars after those are bound.
     If attendees haven't studied how to write function, lab using function is optional.
-    The last example is also optional.
+
+
+What if you don't remember you created Var? Or, if you want to test the Var exists, use `resolve` function with Symbol style of Var name.
+
+{% highlight clojure %}
+user=> (def abc 123)
+#'user/abc
+user=> (resolve 'abc)
+#'user/abc
+user=> (resolve abc)
+
+ClassCastException java.lang.Long cannot be cast to clojure.lang.Symbol  clojure.core/ns-resolve (core.clj:3954)
+{% endhighlight %}
