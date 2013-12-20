@@ -31,10 +31,10 @@ user=> ; what's the difference?
 
 - Advice to coaches
 
-    If attendees don't know what is a variable, explain briefly.
-    Explain the difference between `my-number` and `user/my-number` if necessary.
-    Also, it would be helpful to mention about global Vars and namespaces.
-    However, the namespace has it's own section, so don't need to be in detail.
+    If attendees don't know what is a variable, please explain briefly.
+    The difference between `my-number` and `user/my-number` would be worth mentioning.
+    Also, it would be helpful to talk about global Vars and namespaces.
+    However, the namespace has it's own section. Don't need to be in detail.
 
 Try some examples.
 
@@ -50,7 +50,7 @@ user=> ; we can bind various things, for example..
 user=> (+ "a" "b") ; + works only for numbers in Clojure
 
 ClassCastException java.lang.String cannot be cast to java.lang.Number  clojure.lang.Numbers.add (Numbers.java:126)
-user=> (str "a" "b") ; str function concatenates strings
+user=> (str "a" "b") ; str function concatenates strings, so ...
 "ab"
 
 user=> (def original-plus +) ; saves its original one to make it back later
@@ -68,7 +68,7 @@ user=> (def + original-plus) ; re-binds to original-plus
 user=> (+ 1 2) ; back to normal
 3
 
-user=> ; also functions can be bound to
+user=> ; also user defined functions can be bound to
 
 user=> (def ten-times (fn [x] (* 10 x)))
 #'user/ten-times
@@ -85,6 +85,6 @@ user=> ; wow, confusing error message. but we don't need quote for var-name
 
 - Advice to coaches
 
-    The lab is to use Vars after those are bound.
+    The main purpose of this lab is to learn how to use Vars after those are bound.
     If attendees haven't studied how to write function, lab using function is optional.
     The last example is also optional.
