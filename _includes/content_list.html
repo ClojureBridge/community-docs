@@ -20,6 +20,14 @@
   {% endfor %}
   <br/>
   <h4>Applications</h4>
+  {% for topic in site.data.applications %}
+    <h5>
+      {% if topic.todo %}
+      <span class="glyphicon glyphicon-wrench"></span>
+      {% endif %}
+      <a href="{{ site.baseurl }}{{ topic.permalink }}">{{topic.title}}</a>
+    </h5>
+  {% endfor %}
   <br/>
   <h4>Web Apps (maybe?)</h4>
   <br/>
