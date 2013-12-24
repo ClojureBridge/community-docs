@@ -105,7 +105,7 @@
 
 - title: Namespace
   permalink: /docs/clojure/namespace/
-  todo: true
+  todo: false
 
 - title: Work With Libraries
   permalink: /docs/clojure/libraries/
