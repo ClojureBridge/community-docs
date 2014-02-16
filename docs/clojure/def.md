@@ -105,3 +105,10 @@ user=> (resolve abc)
 
 ClassCastException java.lang.Long cannot be cast to clojure.lang.Symbol  clojure.core/ns-resolve (core.clj:3954)
 {% endhighlight %}
+
+
+### References
+
+- ClojureDocs
+
+    [http://clojuredocs.org/clojure_core/clojure.core/def](http://clojuredocs.org/clojure_core/clojure.core/def)

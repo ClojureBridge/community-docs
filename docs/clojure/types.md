@@ -124,3 +124,10 @@ false
 user=> (= (fn [] ()) (fn [] ())) ; also, these look the same, but not
 false
 {% endhighlight %}
+
+
+### References
+
+- Clojure from the ground up: basic type, "Types"
+
+    [http://aphyr.com/posts/302-clojure-from-the-ground-up-basic-types](http://aphyr.com/posts/302-clojure-from-the-ground-up-basic-types)
