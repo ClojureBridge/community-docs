@@ -72,10 +72,13 @@ z was 2
 ### References
 
 - ClojureDocs
+
     [http://clojuredocs.org/clojure_core/clojure.core/let](http://clojuredocs.org/clojure_core/clojure.core/let)
 
-- Clojure from the ground up, Let bindings section
+- Clojure from the ground up: functions, "Let bindings"
+
     [http://aphyr.com/posts/303-clojure-from-the-ground-up-functions](http://aphyr.com/posts/303-clojure-from-the-ground-up-functions)
 
 - Clojure for the Brave and True, Do Things, 4.2 let
+
     [http://www.braveclojure.com/do-things/#4_2__let](http://www.braveclojure.com/do-things/#4_2__let)

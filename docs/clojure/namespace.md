@@ -187,6 +187,22 @@ These are useful references, especially, the first is worth reading.
 
   [http://clojure.org/namespaces](http://clojure.org/namespaces)
 
+- ClojureDocs
+
+  - `*ns*`
+      [http://clojuredocs.org/clojure_core/clojure.core/*ns*](http://clojuredocs.org/clojure_core/clojure.core/*ns*)
+  - `ns`
+      [http://clojuredocs.org/clojure_core/clojure.core/ns](http://clojuredocs.org/clojure_core/clojure.core/ns)
+  - `in-ns`
+      [http://clojuredocs.org/clojure_core/clojure.core/in-ns](http://clojuredocs.org/clojure_core/clojure.core/in-ns)
+  - `create-ns`
+      [http://clojuredocs.org/clojure_core/clojure.core/create-ns](http://clojuredocs.org/clojure_core/clojure.core/create-ns)
+  - `use`
+      [http://clojuredocs.org/clojure_core/clojure.core/use](http://clojuredocs.org/clojure_core/clojure.core/use)
+  - `require`
+      [http://clojuredocs.org/clojure_core/clojure.core/require](http://clojuredocs.org/clojure_core/clojure.core/require)
+<br/><br/>
+
 - Clojure for the Brave and True, Organizing Your Project: a Librarian's Tale, 3. Creating and Switching to Namespaces
 
   [http://www.braveclojure.com/organization/](http://www.braveclojure.com/organization/) 
