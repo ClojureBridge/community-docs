@@ -17,7 +17,6 @@
 
 - title: Assignment <code>let</code>
   permalink: /docs/clojure/let/
-  todo: true
 
 - title: Destructure
   permalink: /docs/clojure/destructure/
