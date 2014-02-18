@@ -1,8 +1,8 @@
 ---
 layout: docs
 title: Destructuring
-permalink: /docs/clojure/destructure/
-level: intermediate
+permalink: /docs/clojure/destructuring/
+level: easy
 author: yokolet
 ---
 
