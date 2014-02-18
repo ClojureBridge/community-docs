@@ -39,7 +39,6 @@
 
 - title: Basics of Function
   permalink: /docs/clojure/function-creation/
-  todo: true
 
 - title: Anonymous Function
   permalink: /docs/clojure/anonymous-function/
