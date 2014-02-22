@@ -20,7 +20,8 @@ The syntax is:
 Just above may be unclear how to write.
 It is a good idea to look at how other functions do.
 For example, let's look at `+` function,
-which we can see at [https://github.com/clojure/clojure/blob/master/src/clj/clojure/core.clj](https://github.com/clojure/clojure/blob/master/src/clj/clojure/core.clj)
+which we can see at
+[https://github.com/clojure/clojure/blob/master/src/clj/clojure/core.clj#L943](https://github.com/clojure/clojure/blob/master/src/clj/clojure/core.clj#L943)
 
 {% highlight clojure %}
 (defn +
@@ -91,7 +92,7 @@ Let's get back to the `defn` syntax, `(defn name doc-string? attr-map? [params*]
       and in some cases, multiple same name methods of different number of argurments exist
       (the number of arguments is called *arity*).
       Clojure can do in a single definition.
-
+<br/><br/>
 
 So far, we learned how to create the function. It's time to try your own function. Here's an example:
 
@@ -134,9 +135,9 @@ val: 9, coll: clojure.lang.PersistentList$EmptyList@1
 {% endhighlight %}
 <br/>
 
-Above function is for a practice to create function.
+Above is for a practice to create function.
 However, Clojure has a handy function, `reduce`.
-With this function, we can get the same results.
+With `reduce`, we can get the same results as in below:
 
 {% highlight clojure %}
 user> (reduce + 1 '(1 2))
@@ -146,7 +147,7 @@ user> (reduce + 3 [1 2 3])
 {% endhighlight %}
 
 It's always good to check [Clojure Cheat Sheet](http://clojure.org/cheatsheet) or
-search online for the function.
+search online for the functions.
 
 
 ### References
