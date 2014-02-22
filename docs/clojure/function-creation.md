@@ -42,8 +42,8 @@ Compare `defn` syntax and the actual function code.
   - `name` is `+`
   - `doc-string?` is "Returns the sum of nums...(snip)...See also: +'"
   - `attr-map?` is `{:inline (nary-inline...(snip)...:added "1.2"}`
-  - `[params*]` is either `[], [x], [x y], or [x y & more]`
-  - `body`s follow each params. `0`,` (cast Number x)` or other
+  - `[params*]`s are `[]`, `[x]`, `[x y]`, and `[x y & more]`
+  - `body`s follow each param. `0`,` (cast Number x)` and other
 
 
 We use `+` function like:
@@ -59,7 +59,7 @@ user=> (+ 3 4 5 6 7)  ; params [x y & more]
 {% endhighlight %}
 
 
-Also, see the function documentation using `doc` function how `doc-string?`
+Also, see the function's document using `doc` function how `doc-string?`
 and other compoments will show up.
 
 - Advice to coaches
@@ -80,7 +80,7 @@ clojure.core/+
   longs, will throw on overflow. See also: +'
 nil
 {% endhighlight %}
-
+<br/>
 
 Let's get back to the `defn` syntax, `(defn name doc-string? attr-map? [params*] body)`.
 
@@ -111,12 +111,18 @@ user> (do-something 1 1 1)
 <br/>
 
 The first example doesn't use given arguments. Next example uses arguments.
+
 This `add-up` function sums up given initial value and all elements in
 the given collection (vector or list).
+
 Unless given collection is empty, the function recursively calls itself.
+
 When, the given collection gets empty, it returns the summed up value.
+
 To visualize what's going on during the recursive call,
-`println` is added in `let` binding. (see  [`let` binding]({{ site.baseurl}}/docs/clojure/let/) )
+`println` is added in `let` binding.
+(see  [`let` binding]({{ site.baseurl}}/docs/clojure/let/),
+[`cond`]({{ site.baseurl}}/docs/clojure/cond/) )
 
 {% gist 9162464 %}
 
