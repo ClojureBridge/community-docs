@@ -8,32 +8,34 @@ author: yokolet
 
 - Advice to coaches
 
-    Examples here are not complicated, easy ones.
-    However, the idea of destructuring may not be so easy to understand.
+    Examples here are easy ones, not complicated.
+    However, the idea of destructuring may not be easy to understand for beginners.
     Please explain well how it works.<br/><br/>
 
 
 *Destructuriong* is a Clojure specific, special way of variable assignment (binding in Clojure).
 It enables to bind:
 
-  - each of element in vector to corresponding variables
-  - one of element in vector to the variable
-  - each value of map (key-value pairs) to the correspoding variables
+  - each of element in vector to corresponding variables - *case 1*
+  - one of element in vector to the variable - *case 2*
+  - each value of map (key-value pairs) to the correspoding variables - *case 3*
 
-by a single binding.
+in a single binding.
 
 
-Let's look at simple examples:
+Let's try simple examples:
 
 {% highlight clojure %}
 user> (def my-vector [123 234 345 456 567])
 #'user/my-vector
 
+user> ; case 1
 user> (let [[a b c d e] my-vector]
         (println (str a ", " b ", " c ", " d ", " e)))
 123, 234, 345, 456, 567
 nil
 
+user> ; case 2
 user> (let [[_ _ a] my-vector]
         (println a))
 345
@@ -42,6 +44,7 @@ nil
 user> (def my-map {:a 123 :b 234 :c 345 :d 456 :e 567})
 #'user/my-map
 
+user> ; case 3
 user> (let [{a :a b :b c :c d :d e :e} my-map]
         (println (str a ", " b ", " c ", " d ", " e)))
 123, 234, 345, 456, 567
@@ -52,7 +55,7 @@ As we see above, destructuring has two kinds of bindings:
 
   - vector binding forms
   - map binding forms
-
+<br/><br/>
 
 
 #### Vector binding forms
