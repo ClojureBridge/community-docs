@@ -75,6 +75,10 @@ z was 2
 
     [http://clojuredocs.org/clojure_core/clojure.core/let](http://clojuredocs.org/clojure_core/clojure.core/let)
 
+- Introduction to Clojure, Let and Locals
+
+    [http://clojure-doc.org/articles/tutorials/introduction.html#let-and-locals](http://clojure-doc.org/articles/tutorials/introduction.html#let-and-locals)
+
 - Clojure from the ground up: functions, "Let bindings"
 
     [http://aphyr.com/posts/303-clojure-from-the-ground-up-functions](http://aphyr.com/posts/303-clojure-from-the-ground-up-functions)

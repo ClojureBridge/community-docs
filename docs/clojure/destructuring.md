@@ -168,6 +168,10 @@ nil
     [http://clojure.org/special_forms#Special Forms--Binding Forms (Destructuring)](http://clojure.org/special_forms#Special Forms--Binding Forms (Destructuring))
 
 
+- Introduction to Clojure, Destructuring
+
+    [http://clojure-doc.org/articles/tutorials/introduction.html#destructuring](http://clojure-doc.org/articles/tutorials/introduction.html#destructuring)
+
 - Clojure for the Brave and True, Do Things, 3.3.3. Destructuring
 
     [http://www.braveclojure.com/do-things/#3_3_3__Destructuring](http://www.braveclojure.com/do-things/#3_3_3__Destructuring)

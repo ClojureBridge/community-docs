@@ -112,3 +112,7 @@ ClassCastException java.lang.Long cannot be cast to clojure.lang.Symbol  clojure
 - ClojureDocs
 
     [http://clojuredocs.org/clojure_core/clojure.core/def](http://clojuredocs.org/clojure_core/clojure.core/def)
+
+- Introduction to Clojure, Vars
+
+    [http://clojure-doc.org/articles/tutorials/introduction.html#vars](http://clojure-doc.org/articles/tutorials/introduction.html#vars)

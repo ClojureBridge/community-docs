@@ -162,6 +162,9 @@ search online for the functions.
 
     [http://clojuredocs.org/clojure_core/clojure.core/defn](http://clojuredocs.org/clojure_core/clojure.core/defn)
 
+- Introduction to Clojure, Functions: Defining Your Own
+
+    [http://clojure-doc.org/articles/tutorials/introduction.html#functions:-defining-your-own](http://clojure-doc.org/articles/tutorials/introduction.html#functions:-defining-your-own)
 
 - Clojure from the ground up: functions, "Defining functions"
 
