@@ -187,6 +187,10 @@ search online for the functions.
 
     [http://clojure-doc.org/articles/tutorials/introduction.html#functions:-defining-your-own](http://clojure-doc.org/articles/tutorials/introduction.html#functions:-defining-your-own)
 
+- Functions in Clojure
+
+    [http://clojure-doc.org/articles/language/functions.html](http://clojure-doc.org/articles/language/functions.html)
+
 - Clojure from the ground up: functions, "Defining functions"
 
     [http://aphyr.com/posts/303-clojure-from-the-ground-up-functions](http://aphyr.com/posts/303-clojure-from-the-ground-up-functions)
