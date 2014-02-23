@@ -92,6 +92,15 @@ user> (meta #'+)
 ine$fn__3961@31e8b384>}
 {% endhighlight %}
 
+See [`def`]({{ site.baseurl}}/docs/clojure/def/) for what `#'+` is.
+
+- Advice to coaches
+
+    Mention that `defn` is the same as `(def name (fn [params* ] exprs*))`
+    or `(def name (fn ([params* ] exprs*)+))`, which are explained in
+    `(doc defn)`.
+
+
 <br/>
 
 Let's get back to the `defn` syntax, `(defn name doc-string? attr-map? [params*] body)`.
