@@ -17,7 +17,13 @@ Steps:
 
     The pages are in `gh-pages` branch of [ClojureBridge/community-docs](https://github.com/ClojureBridge/community-docs) repository. The branch name expresses it is Github pages.
 
-- Edit or create new contents
+- File the issue
+
+    If it is a new document, let other people know you have started working on some document.
+    Go to [CommunityDocs issues](https://github.com/ClojureBridge/community-docs/issues?page=1&state=open), and create a new issue. Write what document you are working on.
+    Don't forget to close the issue when you finish writing up.
+
+- Edit existing or create new contents
 
     Since we are using Github pages, our contents are provided by [Jekyll](http://jekyllrb.com/docs/home/). Currently, Github pages support HTML and Markdown formats (and textile, probably). Each document should have [Front-matter](http://jekyllrb.com/docs/frontmatter/) on the top. This is very important. Don't forget to add that. For example, this document has the front-matter below.
 

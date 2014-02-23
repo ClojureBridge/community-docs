@@ -42,7 +42,6 @@
 
 - title: Anonymous Function
   permalink: /docs/clojure/anonymous-function/
-  todo: true
 
 - title: Higher Order Function
   permalink: /docs/clojure/higher-order-function/

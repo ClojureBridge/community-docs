@@ -17,6 +17,9 @@ In other languages, it is called a local variable assignment in general.
 In Clojure, it has the diffrenct name, *lexical binding*.
 Like the local variable in other languages, Clojure's lexically bound variable is available to
 use in a limitted code block (scope).
+However, unlike other languages, the value never changes (immutable).
+For convenience, this document uses the word, variable, but its value won't vary once the value is assgined.
+
 
 The syntax is `(let [bindings*] body)`.
 
