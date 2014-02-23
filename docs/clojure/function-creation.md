@@ -19,11 +19,17 @@ The syntax is:
 
 Just above may be unclear how to write.
 It is a good idea to look at how other functions do.
-For example, let's look at `+` function,
-which we can see at
-[https://github.com/clojure/clojure/blob/master/src/clj/clojure/core.clj#L943](https://github.com/clojure/clojure/blob/master/src/clj/clojure/core.clj#L943)
+For example, let's look at source code of `+` function.
+
+- Advice to coaches
+
+    Please make sure *console* is opened if attendees are using LightTable.
+    On other repl, in some case, clojure.repl is not loaded.
+    For such case, don't forget `(use '[clojure.repl])`.
+    The `source` and `doc` function is available after that.
 
 {% highlight clojure %}
+user> (source +)
 (defn +
   "Returns the sum of nums. (+) returns 0. Does not auto-promote
   longs, will throw on overflow. See also: +'"
@@ -35,6 +41,7 @@ which we can see at
   ([x y] (. clojure.lang.Numbers (add x y)))
   ([x y & more]
     (reduce1 + (+ x y) more)))
+nil
 {% endhighlight %}
 
 Compare `defn` syntax and the actual function code.
@@ -42,8 +49,8 @@ Compare `defn` syntax and the actual function code.
   - `name` is `+`
   - `doc-string?` is "Returns the sum of nums...(snip)...See also: +'"
   - `attr-map?` is `{:inline (nary-inline...(snip)...:added "1.2"}`
-  - `[params*]` is either `[], [x], [x y], or [x y & more]`
-  - `body`s follow each params. `0`,` (cast Number x)` or other
+  - `[params*]`s are `[]`, `[x]`, `[x y]`, and `[x y & more]`
+  - `body`s follow each param. `0`,` (cast Number x)` and other
 
 
 We use `+` function like:
@@ -59,16 +66,8 @@ user=> (+ 3 4 5 6 7)  ; params [x y & more]
 {% endhighlight %}
 
 
-Also, see the function documentation using `doc` function how `doc-string?`
+Also, see the function's document using `doc` function how `doc-string?`
 and other compoments will show up.
-
-- Advice to coaches
-
-    Please make sure *console* is opened if attendees are using LightTable.
-    On other repl, in some case, clojure.repl is not loaded.
-    For such case, don't forget `(use '[clojure.repl])`.
-    The `doc` function is available after that.
-
 
 
 {% highlight clojure %}
@@ -81,6 +80,28 @@ clojure.core/+
 nil
 {% endhighlight %}
 
+Clojure has one more way to look at function.
+As in blow,  `meta` function shows what defined in `attr-map?` and some other information.
+
+{% highlight clojure %}
+user> (meta #'+)
+{:arglists ([] [x] [x y] [x y & more]), :ns #<Namespace clojure.core>, :name +, :column 1, :added
+ "1.2", :inline-arities #<core$_GT_1_QMARK_ clojure.core$_GT_1_QMARK_@f73b0ec>, :doc "Returns the
+ sum of nums. (+) returns 0. Does not auto-promote\n  longs, will throw on overflow. See also: +'
+", :line 936, :file "clojure/core.clj", :inline #<core$nary_inline$fn__3961 clojure.core$nary_inl
+ine$fn__3961@31e8b384>}
+{% endhighlight %}
+
+See [`def`]({{ site.baseurl}}/docs/clojure/def/) for what `#'+` is.
+
+- Advice to coaches
+
+    Mention that `defn` is the same as `(def name (fn [params* ] exprs*))`
+    or `(def name (fn ([params* ] exprs*)+))`, which are explained in
+    `(doc defn)`.
+
+
+<br/>
 
 Let's get back to the `defn` syntax, `(defn name doc-string? attr-map? [params*] body)`.
 
@@ -88,13 +109,15 @@ Let's get back to the `defn` syntax, `(defn name doc-string? attr-map? [params*]
   - `doc-string?` and `attr-map?` are optional.
   - `[params*]` can take multiple forms, [], [x], [x y], [x y & more], [x & more], or [& more].
       We need at least one of them.
+
       In other languages, there's an idea of *operator overload*,
       and in some cases, multiple same name methods of different number of argurments exist
       (the number of arguments is called *arity*).
       Clojure can do in a single definition.
 <br/><br/>
 
-So far, we learned how to create the function. It's time to try your own function. Here's an example:
+So far, we learned how to create the function.
+It's time to try your own function. Here's an example of multiple arities:
 
 {% gist 9161447 %}
 
@@ -111,12 +134,16 @@ user> (do-something 1 1 1)
 <br/>
 
 The first example doesn't use given arguments. Next example uses arguments.
-This `add-up` function sums up given initial value and all elements in
-the given collection (vector or list).
-Unless given collection is empty, the function recursively calls itself.
-When, the given collection gets empty, it returns the summed up value.
-To visualize what's going on during the recursive call,
-`println` is added in `let` binding. (see  [`let` binding]({{ site.baseurl}}/docs/clojure/let/) )
+
+This `add-up` function does:
+
+  - sums up given initial value and all elements in the given collection (vector or list).
+  - recursively calls itself unless given collection is empty.
+  - returns the summed up value when the given collection gets empty.
+  - prints out val and coll to visualize what's going on during the recursive call (in `let` binding)
+
+(see  [`let` binding]({{ site.baseurl}}/docs/clojure/let/),
+[`cond`]({{ site.baseurl}}/docs/clojure/cond/) )
 
 {% gist 9162464 %}
 
@@ -156,6 +183,9 @@ search online for the functions.
 
     [http://clojuredocs.org/clojure_core/clojure.core/defn](http://clojuredocs.org/clojure_core/clojure.core/defn)
 
+- Introduction to Clojure, Functions: Defining Your Own
+
+    [http://clojure-doc.org/articles/tutorials/introduction.html#functions:-defining-your-own](http://clojure-doc.org/articles/tutorials/introduction.html#functions:-defining-your-own)
 
 - Clojure from the ground up: functions, "Defining functions"
 
