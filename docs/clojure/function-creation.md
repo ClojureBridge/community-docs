@@ -19,11 +19,17 @@ The syntax is:
 
 Just above may be unclear how to write.
 It is a good idea to look at how other functions do.
-For example, let's look at `+` function,
-which we can see at
-[https://github.com/clojure/clojure/blob/master/src/clj/clojure/core.clj#L943](https://github.com/clojure/clojure/blob/master/src/clj/clojure/core.clj#L943)
+For example, let's look at source code of `+` function.
+
+- Advice to coaches
+
+    Please make sure *console* is opened if attendees are using LightTable.
+    On other repl, in some case, clojure.repl is not loaded.
+    For such case, don't forget `(use '[clojure.repl])`.
+    The `source` and `doc` function is available after that.
 
 {% highlight clojure %}
+user> (source +)
 (defn +
   "Returns the sum of nums. (+) returns 0. Does not auto-promote
   longs, will throw on overflow. See also: +'"
@@ -35,6 +41,7 @@ which we can see at
   ([x y] (. clojure.lang.Numbers (add x y)))
   ([x y & more]
     (reduce1 + (+ x y) more)))
+nil
 {% endhighlight %}
 
 Compare `defn` syntax and the actual function code.
@@ -62,14 +69,6 @@ user=> (+ 3 4 5 6 7)  ; params [x y & more]
 Also, see the function's document using `doc` function how `doc-string?`
 and other compoments will show up.
 
-- Advice to coaches
-
-    Please make sure *console* is opened if attendees are using LightTable.
-    On other repl, in some case, clojure.repl is not loaded.
-    For such case, don't forget `(use '[clojure.repl])`.
-    The `doc` function is available after that.
-
-
 
 {% highlight clojure %}
 user=> (doc +)
@@ -80,6 +79,19 @@ clojure.core/+
   longs, will throw on overflow. See also: +'
 nil
 {% endhighlight %}
+
+Clojure has one more way to look at function.
+As in blow,  `meta` function shows what defined in `attr-map?` and some other information.
+
+{% highlight clojure %}
+user> (meta #'+)
+{:arglists ([] [x] [x y] [x y & more]), :ns #<Namespace clojure.core>, :name +, :column 1, :added
+ "1.2", :inline-arities #<core$_GT_1_QMARK_ clojure.core$_GT_1_QMARK_@f73b0ec>, :doc "Returns the
+ sum of nums. (+) returns 0. Does not auto-promote\n  longs, will throw on overflow. See also: +'
+", :line 936, :file "clojure/core.clj", :inline #<core$nary_inline$fn__3961 clojure.core$nary_inl
+ine$fn__3961@31e8b384>}
+{% endhighlight %}
+
 <br/>
 
 Let's get back to the `defn` syntax, `(defn name doc-string? attr-map? [params*] body)`.
@@ -88,6 +100,7 @@ Let's get back to the `defn` syntax, `(defn name doc-string? attr-map? [params*]
   - `doc-string?` and `attr-map?` are optional.
   - `[params*]` can take multiple forms, [], [x], [x y], [x y & more], [x & more], or [& more].
       We need at least one of them.
+
       In other languages, there's an idea of *operator overload*,
       and in some cases, multiple same name methods of different number of argurments exist
       (the number of arguments is called *arity*).
