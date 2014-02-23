@@ -116,7 +116,8 @@ Let's get back to the `defn` syntax, `(defn name doc-string? attr-map? [params*]
       Clojure can do in a single definition.
 <br/><br/>
 
-So far, we learned how to create the function. It's time to try your own function. Here's an example:
+So far, we learned how to create the function.
+It's time to try your own function. Here's an example of multiple arities:
 
 {% gist 9161447 %}
 
@@ -134,15 +135,13 @@ user> (do-something 1 1 1)
 
 The first example doesn't use given arguments. Next example uses arguments.
 
-This `add-up` function sums up given initial value and all elements in
-the given collection (vector or list).
+This `add-up` function does:
 
-Unless given collection is empty, the function recursively calls itself.
+  - sums up given initial value and all elements in the given collection (vector or list).
+  - recursively calls itself unless given collection is empty.
+  - returns the summed up value when the given collection gets empty.
+  - prints out val and coll to visualize what's going on during the recursive call (in `let` binding)
 
-When, the given collection gets empty, it returns the summed up value.
-
-To visualize what's going on during the recursive call,
-`println` is added in `let` binding.
 (see  [`let` binding]({{ site.baseurl}}/docs/clojure/let/),
 [`cond`]({{ site.baseurl}}/docs/clojure/cond/) )
 
