@@ -44,8 +44,8 @@
   permalink: /docs/clojure/anonymous-function/
   todo: true
 
-- title: High Order Function
-  permalink: /docs/clojure/high-order-function/
+- title: Higher Order Function
+  permalink: /docs/clojure/higher-order-function/
   todo: true
 
 - title: Polymorphism

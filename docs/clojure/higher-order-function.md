@@ -1,7 +1,7 @@
 ---
 layout: docs
-title: High Order Function
-permalink: /docs/clojure/high-order-function/
+title: Higher-order Function
+permalink: /docs/clojure/higher-order-function/
 level: 
 author: 
 ---

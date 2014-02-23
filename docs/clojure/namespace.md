@@ -203,6 +203,10 @@ These are useful references, especially, the first is worth reading.
       [http://clojuredocs.org/clojure_core/clojure.core/require](http://clojuredocs.org/clojure_core/clojure.core/require)
 <br/><br/>
 
+- Clojure Namespaces and Vars
+
+    [http://clojure-doc.org/articles/language/namespaces.html](http://clojure-doc.org/articles/language/namespaces.html)
+
 - Clojure for the Brave and True, Organizing Your Project: a Librarian's Tale, 3. Creating and Switching to Namespaces
 
   [http://www.braveclojure.com/organization/](http://www.braveclojure.com/organization/) 
