@@ -2,8 +2,8 @@
 layout: docs
 title: Higher-order Function
 permalink: /docs/clojure/higher-order-function/
-level: 
-author: 
+level: easy
+author: yokolet
 ---
 
-Help wanted! Please visit  [CONTRIBUTE]({{ site.baseurl }}/docs/contribute)
+### References
