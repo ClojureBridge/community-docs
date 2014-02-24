@@ -9,6 +9,7 @@ author: yokolet
 *Anonymous function* is a function that doesn't have a name.
 Some other languages have this feature.
 For example, in Java, anonymous function is often used in GUI programming.
+JavaScript heavily uses anonymous function for a callback function.
 
 
 The anonymous function is created by `fn` function,
@@ -22,7 +23,8 @@ The simple syntax is:
 
 While `defn` creates function and always binds to the name,
 `fn` just creates function. The created function can be bound to the name by `def` function.
-For example, `(def my-plus (fn [coll] (.....)))`, the anonymous function has a name `my-plus`.
+For example, `(def my-plus (fn [coll] (.....)))`.
+In this case, the anonymous function got a name `my-plus`.
 
 - Advice to coaches
 
