@@ -9,6 +9,7 @@ author: yokolet
 *Anonymous function* is a function that doesn't have a name.
 Some other languages have this feature.
 For example, in Java, anonymous function is often used in GUI programming.
+JavaScript heavily uses anonymous function for a callback function.
 
 
 The anonymous function is created by `fn` function,
@@ -22,7 +23,8 @@ The simple syntax is:
 
 While `defn` creates function and always binds to the name,
 `fn` just creates function. The created function can be bound to the name by `def` function.
-For example, `(def my-plus (fn [coll] (.....)))`, the anonymous function has a name `my-plus`.
+For example, `(def my-plus (fn [coll] (.....)))`.
+In this case, the anonymous function got a name `my-plus`.
 
 - Advice to coaches
 
@@ -39,13 +41,16 @@ Let's try anonymous function.
 {% highlight clojure %}
 user> (fn [coll] (filter even? coll))
 #<user$eval4837$fn__4838 user$eval4837$fn__4838@660652c5>
+
 user> ; anonymous function is defined, but how can we use this?
 user> ; here's one to use anonymous function
 user> ((fn [coll] (filter even? coll)) [1 2 3 4 5 6])
 (2 4 6)
+
 user> ; if we use #() literal, anonymous function can be written like this.
 user> (#(filter even? %) [1 2 3 4 5 6])
 (2 4 6)
+
 user> ; to use anonymous function more than once, bind it to the name.
 user> (def evens (fn [coll] (filter even? coll)))
 #'user/evens
@@ -68,8 +73,8 @@ Why we need anonymous function?
 
 The biggest reason is to use functions for higher-order-function
 (See [`Higher-order Function`]({{ site.baseurl}}/docs/clojure/higher-order-function/) ).
-Another reason can be seen below.
 
+One of other reasons can been seen in the next example.
 
 Suppose we want to get even numbers after two vectors are combined:
 
@@ -97,7 +102,7 @@ user> (defn evens-with-fn
 #'user/evens-with-fn
 user> (evens-with-fn [1 2 3] [4 5 6])
 (2 4 6)
-user> ; no internal variable
+user> ; no variable for a combined vector
 
 user> ; also we can use let, which provides lexical binding (available within scope)
 user> (defn evens-with-let

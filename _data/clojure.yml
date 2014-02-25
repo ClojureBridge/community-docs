@@ -43,9 +43,8 @@
 - title: Anonymous Function
   permalink: /docs/clojure/anonymous-function/
 
-- title: Higher Order Function
+- title: Higher-order Function
   permalink: /docs/clojure/higher-order-function/
-  todo: true
 
 - title: Polymorphism
   permalink: /docs/clojure/polymorphism/
@@ -67,12 +66,16 @@
   permalink: /docs/clojure/map/
   todo: true
 
+- title: Core Function <code>reduce</code>
+  permalink: /docs/clojure/reduce/
+  todo: true
+
 - title: Core Function <code>filter</code>
   permalink: /docs/clojure/filter/
   todo: true
 
-- title: Core Function <code>reduce</code>
-  permalink: /docs/clojure/reduce/
+- title: Core Function <code>remove</code>
+  permalink: /docs/clojure/remove/
   todo: true
 
 - title: Core Function <code>range</code>
