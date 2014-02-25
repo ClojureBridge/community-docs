@@ -15,15 +15,19 @@ Higher-order function is:
 In other languages, this feature may have another name.
 For example, Ruby names it *block* for a callee function though caller doesn't have specific name.
 
-In Clojure, caller functions are high-order functions and callees don't have specifci names.
+In Clojure, caller functions are high-order functions while callees don't have specific names.
 Some of well known higher-order functions among core functions would be
 [`map`]({{ site.baseurl}}/docs/clojure/map/),
 [`reduce`]({{ site.baseurl}}/docs/clojure/reduce/),
 [`remove`]({{ site.baseurl}}/docs/clojure/remove/),
 [`filter`]({{ site.baseurl}}/docs/clojure/filter/), or
 [`iterate`]({{ site.baseurl}}/docs/clojure/iterate/).
+<br/><br/>
+
+#### Function that takes functions as arguments
 
 Before going to those core functions, let's try the example below.
+This example is the first type of higher-order function.
 In this example, we will create a function that does something when two vectors are given.
 
 - Advice to coaches
@@ -65,6 +69,74 @@ user> (concat-some odd? [1 2 3] [4 5 6])
 (1 3 5)
 user> ; yay! we created a higher-order function. concat-some takes a function as an argument.
 {% endhighlight %}
+
+As we saw above, higher-order function is useful make it generic.
+<br/><br/>
+
+#### Function that returns a function
+
+Let's try one more example. This example is the second type of higher-order function.
+
+- Advice to coaches
+
+    The `partial` function may be difficult to undertand/use for beginners.
+    It would be good to use other examples, (partial * 2), to explain.
+
+- partial: [http://clojuredocs.org/clojure_core/clojure.core/partial](http://clojuredocs.org/clojure_core/clojure.core/partial)
+
+
+{% highlight clojure %}
+user> (defn greeting-in-am [who]
+        (str "Good morning, " who))
+#'user/greeting-in-am
+user> (greeting-in-am "everybody")
+"Good morning, everybody"
+
+user> (defn greeting-in-pm [who]
+        (str "Good afternoon, " who))
+#'user/greeting-in-pm
+user> (greeting-in-pm "everybody")
+"Good afternoon, everybody"
+
+user> (defn greeting-anytime [who]
+        (str "Hello, " who))
+#'user/greeting-anytime
+user> (greeting-anytime "everybody")
+"Hello, everybody"
+
+user> ; let's see. the difference of three functions above is
+user> ; the first argument of str function only
+user> ; can we create a generalized function?
+
+user> (defn greeting [when]
+        (case when
+          :am (partial str "Good morning, ")
+          :pm (partial str "Good afternoon, ")
+          (partial str "Hello, ")))
+#'user/greeting
+user> (greeting :am)
+#<core$partial$fn__4190 clojure.core$partial$fn__4190@19f112e5>
+user> (greeting :pm)
+#<core$partial$fn__4190 clojure.core$partial$fn__4190@4b232f3c>
+user> (greeting :when?)
+#<core$partial$fn__4190 clojure.core$partial$fn__4190@507155fb>
+
+user> ; greeting function returns a function!
+
+user> ((greeting :am) "everybody, " "nobody, " "whoever")
+"Good morning, everybody, nobody, whoever"
+
+user> ((greeting :pm) "Andy, " "Bob, " "Charlie, " "David")
+"Good afternoon, Andy, Bob, Charlie, David"
+
+user> ((greeting :hm...) "Ann, " "Beth")
+"Hello, Ann, Beth"
+
+user> ; only one greeting function covers three functions previously defined.
+user> ; additionally, now, we can pass any number of arguments.
+user> ; everything other than :am and :pm falls on the last "Hello, "
+{% endhighlight %}
+
 
 ### References
 
