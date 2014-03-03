@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Condition <code>cond</code>
+title: Conditional <code>cond</code>
 permalink: /docs/clojure/cond/
 level: 
 author: 
