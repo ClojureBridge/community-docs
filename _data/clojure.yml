@@ -11,15 +11,6 @@
   permalink: /docs/clojure/string/
   todo: true
 
-- title: Assignment <code>def</code>
-  permalink: /docs/clojure/def/
-
-- title: Assignment <code>let</code>
-  permalink: /docs/clojure/let/
-
-- title: Destructuring
-  permalink: /docs/clojure/destructuring/
-
 - title: Data Structure <code>list</code>
   permalink: /docs/clojure/list/
   todo: true
@@ -36,6 +27,15 @@
   permalink: /docs/clojure/lazy-seq/
   todo: true
 
+- title: Assignment <code>def</code>
+  permalink: /docs/clojure/def/
+
+- title: Assignment <code>let</code>
+  permalink: /docs/clojure/let/
+
+- title: Destructuring
+  permalink: /docs/clojure/destructuring/
+
 - title: Basics of Function
   permalink: /docs/clojure/function-creation/
 
@@ -44,22 +44,6 @@
 
 - title: Higher-order Function
   permalink: /docs/clojure/higher-order-function/
-
-- title: Polymorphism
-  permalink: /docs/clojure/polymorphism/
-  todo: true
-
-- title: Condition <code>case</code>
-  permalink: /docs/clojure/case/
-  todo: true
-
-- title: Condition <code>if</code>
-  permalink: /docs/clojure/if/
-  todo: true
-
-- title: Condition <code>cond</code>
-  permalink: /docs/clojure/cond/
-  todo: true
 
 - title: Core Function <code>map</code>
   permalink: /docs/clojure/map/
@@ -77,8 +61,23 @@
   permalink: /docs/clojure/remove/
   todo: true
 
+- title: Conditional <code>if</code>
+  permalink: /docs/clojure/if/
+
+- title: Conditional <code>cond</code>
+  permalink: /docs/clojure/cond/
+  todo: true
+
+- title: Conditional <code>case</code>
+  permalink: /docs/clojure/case/
+  todo: true
+
 - title: Core Function <code>range</code>
   permalink: /docs/clojure/range/
+  todo: true
+
+- title: Core Function <code>iterate</code>
+  permalink: /docs/clojure/iterate/
   todo: true
 
 - title: Core Function <code>drop</code>
@@ -89,16 +88,16 @@
   permalink: /docs/clojure/take/
   todo: true
 
-- title: Core Function <code>iterate</code>
-  permalink: /docs/clojure/iterate/
-  todo: true
-
 - title: Loop <code>for</code>
   permalink: /docs/clojure/for/
   todo: true
 
 - title: Loop <code>recur</code>
   permalink: /docs/clojure/recur/
+  todo: true
+
+- title: Polymorphism
+  permalink: /docs/clojure/polymorphism/
   todo: true
 
 - title: Namespace
