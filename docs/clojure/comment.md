@@ -6,7 +6,7 @@ level: easy
 author: yokolet
 ---
 
-While coding, programmers often add comment for some reasons.
+While coding, programmers often add comments for some reasons.
 When they want to explain code, tempoary comment out code, or etc,
 comments are used.
 
