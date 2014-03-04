@@ -42,6 +42,8 @@ true
 
 #### On repl
 
+  - if: [http://clojuredocs.org/clojure_core/clojure.core/if](http://clojuredocs.org/clojure_core/clojure.core/if), [`if`]({{ site.baseurl}}/docs/clojure/if/)
+
 {% highlight clojure %}
 user=> (if true :it-is-truthy :it-isn't-truthy)
 :it-is-truthy
