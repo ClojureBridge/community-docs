@@ -69,7 +69,6 @@
 
 - title: Conditional <code>case</code>
   permalink: /docs/clojure/case/
-  todo: true
 
 - title: Core Function <code>range</code>
   permalink: /docs/clojure/range/
