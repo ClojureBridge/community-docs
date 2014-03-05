@@ -1,8 +1,8 @@
 - title: Basic Web Application by Ring
   permalink: /docs/web-applications/basic-ring/
-  todo: false
 
 - title: Easy Web Application by Compojure
   permalink: /docs/web-applications/easy-compojure/
-  todo: false
 
+- title: HTML generation by Hiccup
+  permalink: /docs/web-applications/hiccup/
