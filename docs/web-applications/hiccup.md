@@ -93,17 +93,26 @@ user=> (html5
 "<!DOCTYPE html>\n<html lang=\"en\"><head><script src=\"myscript.js\" type=\"text/javascript\"></script><link href=\"mystyle.css\" rel=\"stylesheet\" type=\"text/css\"></head><body><div><h1 class=\"info\">Hiccup</h1></div></body></html>"
 
 user=> ; HTML form tags
-user=> (label :hello "clojure")
+user=> (label :hello "clojure")         ; generates Clojure data
 [:label {:for "hello"} "clojure"]
+user=> (html (label :hello "clojure"))  ; html macro converts it to html
+"<label for=\"hello\">clojure</label>"
+
 user=> (text-field :title)
 [:input {:type "text", :name "title", :id "title", :value nil}]
+user=> (html (text-field :title))
+"<input id=\"title\" name=\"title\" type=\"text\" />"
+
 user=> (check-box :yes true "yay!")
 [:input {:type "checkbox", :name "yes", :id "yes", :value "yay!", :checked true}]
+user=> (html (check-box :yes true "yay!"))
+"<input checked=\"checked\" id=\"yes\" name=\"yes\" type=\"checkbox\" value=\"yay!\" />"
 
-user=> ; using for loop
-user=> (for [color [:white :green :pink]]
-  #_=> (label color color))
-([:label {:for "white"} :white] [:label {:for "green"} :green] [:label {:for "pink"} :pink])
+user=> ; using vector data
+user=> (def colors [:white :green :pink])
+#'user/colors
+user=> (html (select-options colors))
+"<option>white</option><option>green</option><option>pink</option>"
 {% endhighlight %}
 
 
