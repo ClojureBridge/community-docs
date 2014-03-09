@@ -1,7 +1,7 @@
 ---
 layout: docs
-title: Loop <code>for</code>
-permalink: /docs/clojure/for/
+title: Loop <code>loop</code>
+permalink: /docs/clojure/loop/
 level: 
 author: 
 ---
