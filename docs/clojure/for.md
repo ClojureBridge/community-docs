@@ -32,6 +32,19 @@ user> ; only when length of the word exceeds 5
 user> (for [w ["LOVe" "coding" "hEllo" "worLD!"] :when (> (count w) 5)]
            (clojure.string/capitalize w))
 ("Coding" "World!")
+
+user> ; using let binding
+user> (for [w ["LOVe" "coding" "hEllo" "worLD!"] :let [length (count w)]]
+           (str (clojure.string/capitalize w) ": " length))
+("Love: 4" "Coding: 6" "Hello: 5" "World!: 6")
+
+user> ; when multiple vectors are inputs...
+user> (for [x ["a" "b" "c"]
+              y ["a" "b" "c"]
+              z ["a" "b" "c"]]
+           (str x y z))
+("aaa" "aab" "aac" "aba" "abb" "abc" "aca" "acb" "acc" "baa" "bab" "bac" "bba" "bbb" "bbc" "bca\
+" "bcb" "bcc" "caa" "cab" "cac" "cba" "cbb" "cbc" "cca" "ccb" "ccc")
 {% endhighlight %}
 
 
