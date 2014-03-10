@@ -1,9 +1,15 @@
 ---
 layout: docs
-title: Core Function <code>recur</code>
+title: Loop <code>recur</code>
 permalink: /docs/clojure/recur/
-level: 
-author: 
+level: easy
+author: yokolet
 ---
 
-Help wanted! Please visit  [CONTRIBUTE]({{ site.baseurl }}/docs/contribute)
+
+### References
+
+- ClojureDocs
+
+    [http://clojuredocs.org/clojure_core/clojure.core/recur](http://clojuredocs.org/clojure_core/clojure.core/recur)
+

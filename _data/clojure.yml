@@ -87,10 +87,17 @@
 
 - title: Loop <code>for</code>
   permalink: /docs/clojure/for/
-  todo: true
 
 - title: Loop <code>recur</code>
   permalink: /docs/clojure/recur/
+  todo: true
+
+- title: Loop <code>loop</code>
+  permalink: /docs/clojure/loop/
+  todo: true
+
+- title: Loop <code>doseq</code>
+  permalink: /docs/clojure/doseq/
   todo: true
 
 - title: Polymorphism
@@ -99,7 +106,6 @@
 
 - title: Namespace
   permalink: /docs/clojure/namespace/
-  todo: false
 
 - title: Work With Libraries
   permalink: /docs/clojure/libraries/
