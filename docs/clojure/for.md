@@ -32,6 +32,10 @@ user> (for [w ["LOVe" "coding" "hEllo" "worLD!"]]  ; like let, *for* takes bindi
            (clojure.string/capitalize w))
 ("Love" "Coding" "Hello" "World!")
 
+user> ; we can get the same result using *map* core function
+user> (map clojure.string/capitalize ["LOVe" "coding" "hEllo" "worLD!"])
+("Love" "Coding" "Hello" "World!")
+
 user> ; only when length of the word exceeds 5
 user> (for [w ["LOVe" "coding" "hEllo" "worLD!"] :when (> (count w) 5)]
            (clojure.string/capitalize w))
