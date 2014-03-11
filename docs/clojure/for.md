@@ -17,15 +17,23 @@ Among them, Clojure takes very different approach.
 <br/><br/>
 
 Clojure's `for` is a sort of loop what it is in other languages.
+But, it is categorized to a sequence operator like
+[`map`]({{ site.baseurl}}/docs/clojure/map/)(core function) or
+[`reduce`]({{ site.baseurl}}/docs/clojure/reduce/).
 More importantly, in Clojure, `for` is a *list comprehension*, which means it creates a list from a given list. 
 <br/><br/>
 
 The syntax of `for` macro is:
 `(for [binding-form coll-expr filter-expr?] expr)`
 
+Try some examples.
 {% highlight clojure %}
-user> (for [w ["LOVe" "coding" "hEllo" "worLD!"]]  ; like let, for takes binding-form
+user> (for [w ["LOVe" "coding" "hEllo" "worLD!"]]  ; like let, *for* takes binding-form
            (clojure.string/capitalize w))
+("Love" "Coding" "Hello" "World!")
+
+user> ; we can get the same result using *map* core function
+user> (map clojure.string/capitalize ["LOVe" "coding" "hEllo" "worLD!"])
 ("Love" "Coding" "Hello" "World!")
 
 user> ; only when length of the word exceeds 5
