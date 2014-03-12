@@ -116,8 +116,7 @@ With TCO, Clojure is good at processing a huge list.
 
 - Clojure.org, Special Forms, recur
 
-    [http://clojure.org/special_forms#Special Forms--(recur exprs*)](http://clojure.org/special_forms#Special Forms--(recur exprs*))
-
+    <a href="http://clojure.org/special_forms#Special%20Forms--(recur%20exprs*)">http://clojure.org/special_forms#Special%20Forms--(recur%20exprs*)</a>
 
 - Clojure from the ground up: macros, Recursion
 

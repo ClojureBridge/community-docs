@@ -93,7 +93,6 @@
 
 - title: Loop <code>loop</code>
   permalink: /docs/clojure/loop/
-  todo: true
 
 - title: Loop <code>doseq</code>
   permalink: /docs/clojure/doseq/
