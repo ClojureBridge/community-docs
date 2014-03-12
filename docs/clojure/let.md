@@ -21,7 +21,7 @@ However, unlike other languages, the value never changes (immutable).
 For convenience, this document uses the word, variable, but its value won't vary once the value is assgined.
 
 
-The syntax is `(let [bindings*] body)`.
+The syntax is `(let [bindings*] exprs*)`.
 
 Let's try below on REPL.
 
