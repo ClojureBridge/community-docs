@@ -10,6 +10,15 @@ author: yokolet
 This document puts together useful resources to get started.
 <br/><br/>
 
+
+#### Introductory video
+
+- LispCast Introduction to Clojure
+
+    [http://purelyfunctional.tv/intro-to-clojure](http://purelyfunctional.tv/intro-to-clojure)<br/>
+    Free access for ClojureBridge attendees/TAs available. (Thanks! LispCast)
+    <br/><br/>
+
 #### Introductory documents
 
 - Clojure Documentation
