@@ -94,8 +94,8 @@
 - title: Loop <code>loop</code>
   permalink: /docs/clojure/loop/
 
-- title: Loop <code>doseq</code>
-  permalink: /docs/clojure/doseq/
+- title: Loop <code>trampoline</code>
+  permalink: /docs/clojure/trampoline/
   todo: true
 
 - title: Polymorphism
