@@ -22,7 +22,8 @@ user> (loop [coll ["hello" "world" "love" "coding"] result "Words: "]   ; 2 bind
             (recur (rest coll) (str result (first coll) ", "))))  ; arity 2
 "Words: hello, world, love, coding"
 {% endhighlight %}
-<br/>
+Compare the exmple above to the one in [`recur`]({{ site.baseurl}}/docs/clojure/recur/).
+<br/><br/>
 
 For a loop exercise, let's think about how to calculate the sum of the geometric series ([http://en.wikipedia.org/wiki/Geometric_series](http://en.wikipedia.org/wiki/Geometric_series).
 The well-known geometric series is 1/2 + 1/4 + 1/8 + 1/16 + ...., which converges to 1.
