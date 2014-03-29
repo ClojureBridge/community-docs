@@ -6,6 +6,16 @@ level: easy
 author: mathonsunday
 ---
 
+Two ways to construct list
+
+Common list fcns
+
+Lists are comparable
+
+This means that lists are well-suited for small collections, or collections which are read in linear order, but are slow when you want to get arbitrary elements from later in the list. For fast access to every element, we use a vector.
+
+Example of where we'd use a linked list - fifo queue - queue management system
+
 
 ### References
 
