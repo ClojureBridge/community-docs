@@ -6,14 +6,6 @@ level: easy
 author: mathonsunday
 ---
 
-Two ways to construct list
-
-Lists are comparable
-
-This means that lists are well-suited for small collections, or collections which are read in linear order, but are slow when you want to get arbitrary elements from later in the list. For fast access to every element, we use a vector.
-
-Example of where we'd use a linked list - fifo queue - queue management system
-
 
 ### References
 
@@ -26,6 +18,3 @@ Example of where we'd use a linked list - fifo queue - queue management system
 
     [http://aphyr.com/posts/302-clojure-from-the-ground-up-basic-types](http://aphyr.com/posts/302-clojure-from-the-ground-up-basic-types)
 
-- Clojure for the Brave and True, 2.7 Lists
-
-    [http://www.braveclojure.com/do-things/#2_7__Lists](http://www.braveclojure.com/do-things/#2_7__Lists)

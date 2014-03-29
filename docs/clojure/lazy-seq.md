@@ -6,11 +6,15 @@ level: easy
 author: mathonsunday
 ---
 
+Construct a lazy sequence
+
+What is laziness?
+
 
 ### References
 
 - ClojureDocs
-	- get : [http://clojuredocs.org/clojure_contrib/clojure.contrib.generic.collection/get](http://clojuredocs.org/clojure_contrib/clojure.contrib.generic.collection/get)
+
 
 - Clojure Documentation, Introduction to Clojure, Laziness
 

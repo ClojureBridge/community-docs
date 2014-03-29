@@ -6,6 +6,10 @@ level:
 author: 
 ---
 
+Construct a vector
+
+Common vector fcns
+
 
 ### References
 
