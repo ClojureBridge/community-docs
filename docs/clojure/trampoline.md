@@ -41,7 +41,7 @@ To avoid StackOverFlowError, we can use `trampoline` function.
 This function takes function and a given function's argument(s).
 While the given function returns a function, `trampoline` keeps calling the give function without an argument.
 
-To use `trampoline`, we need to change *incrementor* and *decrementor* so that those will return a function. Changing it to anonymous functions does the job.
+To use `trampoline`, we need to change *incrementor* and *decrementor* so that those will return a function. Changing it to [`anonymous function`]({{ site.baseurl}}/docs/clojure/anonymous-function) does the job.
 Below is a trampline-able functions.
 
 {% gist 9866286  %}
@@ -50,6 +50,7 @@ Below is a trampline-able functions.
 user=> (incrementor2 500)
 500, #<user$incrementor2$fn__664 user$incrementor2$fn__664@2f5731c7>
 user=> ; incrementor2 function returns function
+user=> ; incrementor2 is a higher-order function since it returns function
 
 user=> (trampoline incrementor2 500)
 500, 535, 523, 539, 523, ... (bunch of numbers) ....
