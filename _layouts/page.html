@@ -6,11 +6,14 @@ layout: default
   <div class="row row-offcanvas row-offcanvas-right">
     <div class="col-lg-9">
       <div class="starter-template">
-        <span>{{ page.date | date_to_long_string }}</span>
         <div class="page-header">
-          <h1>{{ page.title }}</h1><h2>{{ page.description }}</h2>
+          <h1>{{ page.title }}</h1>
         </div>
-        {{ content }}
+        <div class="row-fluid">
+          <div class="span12">
+            {{ content }}
+          </div>
+        </div>
       </div>
     </div>
     <div class="col-lg-3 sidebar-offcanvas" id="sidebar"
