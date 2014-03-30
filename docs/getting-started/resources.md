@@ -2,7 +2,7 @@
 layout: docs
 title: Where to find
 permalink: /docs/getting-started/resources/
-level: easy
+level:
 author: yokolet
 ---
 
@@ -17,6 +17,21 @@ This document puts together useful resources to get started.
 
     [http://purelyfunctional.tv/intro-to-clojure](http://purelyfunctional.tv/intro-to-clojure)<br/>
     Free access for ClojureBridge attendees/TAs available. (Thanks! LispCast)
+    <br/><br/>
+
+#### Programming Resources
+
+  - Official Clojure web site
+
+    [http://clojure.org/](http://clojure.org/)
+
+  - Clojure Cheat Sheet
+
+    [http://clojure.org/cheatsheet](http://clojure.org/cheatsheet)
+
+  - Clojars (Clojure library repository)
+
+    [https://clojars.org/](https://clojars.org/)
     <br/><br/>
 
 #### Introductory documents
@@ -92,25 +107,6 @@ This document puts together useful resources to get started.
     [http://www.flyingmachinestudios.com/](http://www.flyingmachinestudios.com/)
     <br/><br/>
 
-#### Programming Resources
-
-  - Official Clojure web site
-
-    [http://clojure.org/](http://clojure.org/)
-
-  - Clojure Cheat Sheet
-
-    [http://clojure.org/cheatsheet](http://clojure.org/cheatsheet)
-
-  - Clojars (Clojure library repository)
-
-    [https://clojars.org/](https://clojars.org/)
-
-  - ClojureSphere
-
-    [http://www.clojuresphere.com/](http://www.clojuresphere.com/)
-    <br/><br/>
-
 #### Programming Challenges
 
   - Clojure Koans
@@ -124,3 +120,18 @@ This document puts together useful resources to get started.
   - 4Clojure
 
     [https://www.4clojure.com/](https://www.4clojure.com/)
+    <br/><br/>
+
+#### Mailing List
+
+  - Clojure Google Group
+
+    [https://groups.google.com/forum/?hl=en#!forum/clojure](https://groups.google.com/forum/?hl=en#!forum/clojure)
+
+    - Question from a beginner: "How did you learn Clojure?"
+
+      [https://groups.google.com/forum/?hl=en#!topic/clojure/kgjyduuQXFg](https://groups.google.com/forum/?hl=en#!topic/clojure/kgjyduuQXFg)
+
+  - ClojureScript Google Group
+
+    [https://groups.google.com/forum/#!forum/clojurescript](https://groups.google.com/forum/#!forum/)
