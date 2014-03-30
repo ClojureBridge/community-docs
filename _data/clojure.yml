@@ -96,7 +96,6 @@
 
 - title: Loop <code>trampoline</code>
   permalink: /docs/clojure/trampoline/
-  todo: true
 
 - title: Polymorphism
   permalink: /docs/clojure/polymorphism/
