@@ -131,3 +131,7 @@ false
 - Clojure from the ground up: basic type, "Types"
 
     [http://aphyr.com/posts/302-clojure-from-the-ground-up-basic-types](http://aphyr.com/posts/302-clojure-from-the-ground-up-basic-types)
+
+- GetClojure
+
+    <a href="http://getclojure.com/search?q=type&num=0" target="_blank">http://getclojure.com/search?q=type&num=0</a>

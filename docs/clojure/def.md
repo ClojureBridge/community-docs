@@ -116,3 +116,7 @@ ClassCastException java.lang.Long cannot be cast to clojure.lang.Symbol  clojure
 - Introduction to Clojure, Vars
 
     [http://clojure-doc.org/articles/tutorials/introduction.html#vars](http://clojure-doc.org/articles/tutorials/introduction.html#vars)
+
+- GetClojure
+
+    <a href="http://getclojure.com/search?q=def&num=0" target="_blank">http://getclojure.com/search?q=def&num=0</a>

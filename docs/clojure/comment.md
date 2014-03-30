@@ -89,3 +89,8 @@ user> ; let form  was ignored
 - Clojure Style Guide
 
     [https://github.com/bbatsov/clojure-style-guide#comments](https://github.com/bbatsov/clojure-style-guide#comments)
+
+
+- GetClojure
+
+    <a href="http://getclojure.com/search?q=comment&num=0" target="_blank">http://getclojure.com/search?q=comment&num=0</a>

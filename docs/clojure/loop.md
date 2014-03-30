@@ -77,3 +77,7 @@ user> ; converged to 1
 - Clojure for the Brave and True, Do Things, 4.3. loop
 
     [http://www.braveclojure.com/do-things/#4_3__loop](http://www.braveclojure.com/do-things/#4_3__loop)
+
+- GetClojure
+
+    <a href="http://getclojure.com/search?q=loop&num=0" target="_blank">http://getclojure.com/search?q=loop&num=0</a>
