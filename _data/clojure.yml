@@ -54,7 +54,6 @@
 
 - title: Core Function <code>filter</code>
   permalink: /docs/clojure/filter/
-  todo: true
 
 - title: Core Function <code>remove</code>
   permalink: /docs/clojure/remove/
