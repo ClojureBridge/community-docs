@@ -126,3 +126,8 @@ With TCO, Clojure is good at processing a huge list.
 - Clojure for the Brave and True, Functional Programming, 2.1 Recursion instead of for/while
 
     [http://www.braveclojure.com/functional-programming/#2_1__Recursion_instead_of_for_while](http://www.braveclojure.com/functional-programming/#2_1__Recursion_instead_of_for_while)
+
+
+- GetClojure
+
+    <a href="http://getclojure.com/search?q=recur&num=0" target="_blank">http://getclojure.com/search?q=recur&num=0</a>

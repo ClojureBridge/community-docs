@@ -123,3 +123,7 @@ CompilerException java.lang.RuntimeException: Unable to resolve symbol: actual i
 - Clojure for the Brave and True, Control Flow, if
 
     [http://www.braveclojure.com/do-things/#1_2__Control_Flow](http://www.braveclojure.com/do-things/#1_2__Control_Flow)
+
+-  GetClojure
+
+    <a href="http://getclojure.com/search?q=if&num=0" target="_blank">http://getclojure.com/search?q=if&num=0</a>

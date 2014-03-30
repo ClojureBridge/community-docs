@@ -199,3 +199,8 @@ search online for the functions.
 - Clojure for the Brave and True, Do Things, 3.3 Defining Functions
 
     [http://www.braveclojure.com/do-things/#3_3__Defining_Functions](http://www.braveclojure.com/do-things/#3_3__Defining_Functions)
+
+
+- GetClojure
+
+    <a href="http://getclojure.com/search?q=defn&num=0" target="_blank">http://getclojure.com/search?q=defn&num=0</a>

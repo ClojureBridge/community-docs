@@ -57,3 +57,8 @@ nil
 - Clojure from the ground up: macros, Control flow
 
     [http://aphyr.com/posts/305-clojure-from-the-ground-up-macros](http://aphyr.com/posts/305-clojure-from-the-ground-up-macros)
+
+
+- GetClojure
+
+    <a href="http://getclojure.com/search?q=case&num=0" target="_blank">http://getclojure.com/search?q=case&num=0</a>

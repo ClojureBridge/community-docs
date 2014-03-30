@@ -1,3 +1,5 @@
+.ruby-version
+.ruby-gemset
 _site
 tmp
 .DS_Store
