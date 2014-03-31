@@ -22,8 +22,8 @@ description: "April 4 - April 5, 2014"
 
 | Time        | What | Info |
 |:-----------:|------------------------------------------|----------------------------------|
-| 6:30 - 7:15 | Installation and (optional) easy hands­on | Make sure env works and sneak peak Clojure coding |
-| 7:15 - 7:45 | Getting to know your classmates  | Self­introduction by attendees, TAs, Clinton, Alan, and Bridget |
+| 6:30 - 7:15 | Installation and (optional) easy hands-on | Make sure env works and sneak peak Clojure coding |
+| 7:15 - 7:45 | Getting to know your classmates  | Self-introduction by attendees, TAs, Clinton, Alan, and Bridget |
 | 7:45 - 8:30 | (optional) Easy hands-on | Try easy coding, also dditional installation time
 {: .table.table-striped }
 
