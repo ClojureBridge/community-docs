@@ -10,9 +10,9 @@ description: "April 4 - April 5, 2014"
 
 ---
 
-### Subscription
+### Event Description
 
-Closed. (Full)
+#### [http://www.clojurebridge.org/events/2014-04-04-durham-nc](http://www.clojurebridge.org/events/2014-04-04-durham-nc)
 
 ---
 

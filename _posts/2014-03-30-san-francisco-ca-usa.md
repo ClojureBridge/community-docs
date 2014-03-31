@@ -4,6 +4,12 @@ title: "San Francisco, CA, USA"
 description: "May 2 - May 3, 2014"
 ---
 
-### Eventbrite page
+### @The Climate Corporation
 
-### [http://www.eventbrite.com/e/clojurebridge-workshop-for-women-tickets-10363793385](http://www.eventbrite.com/e/clojurebridge-workshop-for-women-tickets-10363793385)
+#### 201 3rd Street Suite 1100, San Francisco, CA 94103
+
+---
+
+### Event Description
+
+#### [http://www.clojurebridge.org/events/2014-05-02-san-francisco](http://www.clojurebridge.org/events/2014-05-02-san-francisco)
