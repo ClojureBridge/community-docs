@@ -4,21 +4,30 @@ title: "Durham, NC, USA"
 description: "April 4 - April 5, 2014"
 ---
 
-### @[Cognitect, Inc.](http://cognitect.com/contact)
+#### @[Cognitect, Inc.](http://cognitect.com/contact)
 
-#### 303 S Roxboro St., Suite 20, Durham NC, 27701
-
----
-
-### Event Description
-
-#### [http://www.clojurebridge.org/events/2014-04-04-durham-nc](http://www.clojurebridge.org/events/2014-04-04-durham-nc)
+303 S Roxboro St., Suite 20, Durham NC, 27701
+{: .h5 }
 
 ---
 
-### Schedule
+#### Event Description
 
-####Friday 6:30 - 8:30pm
+[http://www.clojurebridge.org/events/2014-04-04-durham-nc](http://www.clojurebridge.org/events/2014-04-04-durham-nc)
+{: .h5 }
+
+---
+
+#### Event Repository
+
+[https://github.com/clojurebridge-durham](https://github.com/clojurebridge-durham)
+{: .h5 }
+
+---
+
+#### Schedule
+
+#####Friday 6:30 - 8:30pm
 
 | Time        | What | Info |
 |:-----------:|------------------------------------------|----------------------------------|
@@ -27,7 +36,7 @@ description: "April 4 - April 5, 2014"
 | 7:45 - 8:30 | (optional) Easy hands-on | Try easy coding, also dditional installation time
 {: .table.table-striped }
 
-####Saturday 9:00am - 5:30pm (After Party 6:00 - 7:30pm)
+#####Saturday 9:00am - 5:30pm (After Party 6:00 - 7:30pm)
 
 | Time        | What | Info |
 |:-----------:|------------------------------------------|----------------------------------|
