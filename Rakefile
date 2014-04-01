@@ -67,8 +67,18 @@ task :post do
     post.puts "layout: post"
     post.puts "title: \"#{title.gsub(/-/,' ')}\""
     post.puts 'description: ""'
-    post.puts "category: #{category}"
-    post.puts "tags: #{tags}"
+    post.puts "---"
+    post.puts
+    post.puts "#### @"
+    post.puts
+    post.puts "---"
+    post.puts
+    post.puts "#### Event Description"
+    post.puts
+    post.puts "---"
+    post.puts
+    post.puts "#### Event Respository"
+    post.puts
     post.puts "---"
   end
 end # task :post
