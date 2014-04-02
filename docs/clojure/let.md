@@ -8,8 +8,8 @@ author: yokolet
 
 - Advice to coaches
 
-    As you know, in most cases, let binding is used in a function, and with destructuring.
-    We have function and destructuring sections.
+    The *let* binding is frequently used in a function definition.
+    We have function, destructuring and function with let/destructuring sections.
     It may be good to come back this lab after or during the function lab.
 
 Like [`def`]({{ site.baseurl}}/docs/clojure/def/) does, `let` creates a *binding*.
