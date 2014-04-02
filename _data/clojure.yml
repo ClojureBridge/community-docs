@@ -38,6 +38,9 @@
 - title: Basics of Function
   permalink: /docs/clojure/function-creation/
 
+- title: Function with let/destructuring
+  permalink: /docs/clojure/function-with-let/
+
 - title: Anonymous Function
   permalink: /docs/clojure/anonymous-function/
 
