@@ -21,7 +21,18 @@ We may write the code below without `let` binding, however, using `let` makes th
 
 {% highlight clojure %}
 user=> (question "Mary" "John")
-"Hey Mary, is Mary's and John's the same?"
+"Hey Mary, are Mary's and John's the same?"
+{% endhighlight %}
+<br/>
+
+We can even bind a function as a value.
+That is to avoid a repetition or do some preprocesses.
+
+{% gist 9938351 %}
+
+{% highlight clojure %}
+user=> (question "Mary" "John")
+"Hey Mary, are Mary's and John's the same?"
 {% endhighlight %}
 <br/>
 
@@ -45,10 +56,11 @@ false
 {% endhighlight %}
 <br/>
 
-The *right-triangle?* function above used *nth* function to get each value.
-In such a case, Clojure has a smart way of assigning values.
+The *right-triangle?* function above uses *nth* function to get ajacent, opposite and hypotenuse.
+The *nth* function works, but Clojure has a smart way of assigning values.
 It is [`destructuring`]({{ site.baseurl}}/docs/clojure/destructuring).
 The function *right-triangle2?* below uses destructuring in function arguments.
+Without any additional function or preprocess, we can assign three values at the same time.
 
 {% gist 9927633  %}
 
