@@ -26,6 +26,9 @@
   permalink: /docs/clojure/lazy-seq/
   todo: true
 
+- title: Data Structure <code>set</code>
+  permalink: /docs/clojure/set/
+
 - title: Assignment <code>def</code>
   permalink: /docs/clojure/def/
 
