@@ -2,8 +2,8 @@
 layout: docs
 title: Data Structure <code>set</code>
 permalink: /docs/clojure/set/
-level: 
-author: 
+level: easy
+author: yokolet
 ---
 
 The *set* is one of data strucrues. Every computer language has this data structure.
