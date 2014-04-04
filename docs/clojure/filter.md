@@ -70,6 +70,10 @@ user=> (filter palindrome? (range 1000 5000))
 
     [http://clojuredocs.org/clojure_core/clojure.core/filter](http://clojuredocs.org/clojure_core/clojure.core/filter)
 
+- Introduction to Clojure, filter and remove
+
+   [http://clojure-doc.org/articles/tutorials/introduction.html#filter-and-remove](http://clojure-doc.org/articles/tutorials/introduction.html#filter-and-remove)
+
 - Clojure from the ground up: sequences, Subsequences
 
     [http://aphyr.com/posts/304-clojure-from-the-ground-up-sequences](http://aphyr.com/posts/304-clojure-from-the-ground-up-sequences)
