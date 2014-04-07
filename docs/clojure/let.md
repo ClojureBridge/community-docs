@@ -8,22 +8,21 @@ author: yokolet
 
 - Advice to coaches
 
-    The *let* binding is frequently used in a function definition.
-    We have function, destructuring and function with let/destructuring sections.
-    It may be good to come back this lab after or during the function lab.
+    The *let* binding is frequently used in function definitions.
+    We have functions with destructuring and functions with let/destructuring sections.
+    It may be good to come back to this lab after or during the function lab.
 
-Like [`def`]({{ site.baseurl}}/docs/clojure/def/) does, `let` creates a *binding*.
-In other languages, it is called a local variable assignment in general.
-In Clojure, it has the diffrenct name, *lexical binding*.
-Like the local variable in other languages, Clojure's lexically bound variable is available to
-use in a limitted code block (scope).
-However, unlike other languages, the value never changes (immutable).
-For convenience, this document uses the word, variable, but its value won't vary once the value is assgined.
-
+Like [`def`]({{ site.baseurl}}/docs/clojure/def/), `let` creates a *binding*.
+In other languages, it is called a local variable assignment.
+In Clojure, it has the different name: *lexical binding*.
+Similar to  local variables in other languages, Clojure's lexically bound variables are available to
+use in a limited code block (scope).
+However, unlike other languages, the values never change (immutable).
+For convenience, this document uses the word *variable* but its value won't vary once the value is assigned.
 
 The syntax is `(let [bindings*] exprs*)`.
 
-Let's try below on REPL.
+Let's try this in a REPL.
 
 {% highlight clojure %}
 user> (let [her-number 234] (println her-number))
@@ -33,12 +32,12 @@ user> her-number
 CompilerException java.lang.RuntimeException: Unable to resolve symbol: her-number in this context
 , compiling:(/private/var/folders/4b/c9gsjvv12tq9n4mph065qs480000gn/T/form-init6323661111322215411
 .clj:1:743)
-user> ; because her-number is available within let parenthesis (body).
+user> ; because her-number is available only within let parenthesis (body).
 {% endhighlight %}
 
-We can write as many as bindings (key-value pair) within a square braket.
+We can write as many bindings (key-value pairs) as we want within the square brackets.
 Those bindings are evaluated one by one, so we can use the evaluated result
-within a single square bracket. Try examples below:
+within a single square bracket. Try these examples below:
 
 {% highlight clojure %}
 user> (let [x 1
@@ -55,9 +54,9 @@ nil
 {% endhighlight %}
 
 
-As the examples above, the value part of bindings can be a function.
-We can use `println` function in let bindings, also.
-This is often used for debugging to make sure what value is in there.
+As seen in the examples above, the value part of bindings can be a function.
+We can use `println` function in let bindings, too.
+This is often used for debugging so that you can check the value.
 
 
 {% highlight clojure %}

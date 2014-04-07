@@ -6,10 +6,9 @@ level: easy
 author: yokolet
 ---
 
-This lab is to get familiar with *command*s. Editor may support the feature to run Clojure code; however, people intesively use various commands while programming. Learning commands is also a part of learning a programming language.
+This lab is to get familiar with *command*s. Your editor may have a command to run Clojure code. People may use different commands while programming. Learning commands is also a part of learning a programming language.
 
-
-Open Terminal on OSX or Linux (may BSD), Command Prompt on Windows.
+Open Terminal on OS X, Linux, or BSD, or open the Command Prompt on Windows (Start - Run - cmd).
 Type command `java -version`:
 
 {% highlight bash %}
@@ -19,15 +18,13 @@ Java(TM) SE Runtime Environment (build 1.8.0-ea-b118)
 Java HotSpot(TM) 64-Bit Server VM (build 25.0-b60, mixed mode)
 {% endhighlight %}
 
-The result may vary, but `java` command should work and reports it's version.
-
+The results may vary, but the `java` command should work and it should report its version.
 
 - Advice to coaches
 
-    Please check every attedee has Java installed and it's version. Leiningen works on JDK 6 and later.
+    Please check every attendee has Java installed, and check the Java version. Leiningen works on JDK 6 and later.
 
-
-Try some more commands. These commands are used to explore directories:
+Try some more commands. These commands are used to explore directories on OS X, Linux, or BSD:
 
 {% highlight bash %}
 bash-3.2$ pwd
@@ -45,7 +42,13 @@ bash-3.2$ pwd
 /Users/yoko
 {% endhighlight %}
 
+On Windows:
+{% highlight bash %}
+mkdir my-lovely-dir
+cd my-lovely-dir
+dir
+{% endhighlight %}
 
 - Advice to coaches
 
-    Berifly, explain what commnds do what. Introduce more commands if necessary. However, this lab should not take long.
+    Briefly explain which commnds do what. Introduce more commands if necessary. However, this lab should not take long.

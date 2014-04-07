@@ -6,20 +6,20 @@ level: easy
 author: yokolet
 ---
 
-While [`for`]({{ site.baseurl}}/docs/clojure/for/) is a sort of loop,
+While [`for`]({{ site.baseurl}}/docs/clojure/for/) is somewhat like a loop,
 `recur` is a real loop in Clojure.
-Also, `recur` has a remarkable idea that we may call it "this is *the Clojure*."
+`recur` represents such a remarkable idea that we might even say, "this *is* Clojure."
 
-If you have a programming background, you may have heard, *tail recursion*,
+If you have a programming background, you may have heard of *tail recursion*,
 which is a major feature of functional languages.
-This `recur` special form is the one of *tail recursion*.
-As the words, *tail recursion*, express, `recur` must be called in the *tail position*.
-In other words, `recur` must be in the last thing to be evaluated.
+This `recur` special form is the one that implements *tail recursion*.
+As the words "*tail recursion*" indicate, `recur` must be called in the *tail position*.
+In other words, `recur` must be the last thing to be evaluated.
 <br/><br/>
 
-The syntax of `recur` macro is: `(recur exprs*)`
+The syntax of the `recur` macro is: `(recur exprs*)`
 
-Look at simple examples:
+Look at these simple examples:
 
   - count: [http://clojuredocs.org/clojure_core/clojure.core/count](http://clojuredocs.org/clojure_core/clojure.core/count)
   - first: [http://clojuredocs.org/clojure_core/clojure.core/first](http://clojuredocs.org/clojure_core/clojure.core/first)
@@ -69,10 +69,10 @@ user> (str "Words: " (clojure.string/join ", " ["hello" "world" "love" "coding"]
 {% endhighlight %}
 <br/>
 
-Even though we can write code without `recur`, the use of `recur` is strongly recommended in Clojure.
-The reason is the *tail-call optimazation (TCO)*.
+Even though we can write code without `recur`, the use of `recur` is strongly recommended in Clojure
+because of *tail-call optimization (TCO)*.
 
-Compare recursive call, sum-up function,  and `recur`, sum-up-with-recur function.
+Compare a recursive sum-up function and a sum-up-with-recur function that uses `recur`.
 The recursive call raises StackOverflowError when summing up to 10000.
 On the other hand, `recur` can sum up even 100000.
 This is why *tail-call optimization (TCO)* works effectively.
@@ -104,8 +104,8 @@ user> (sum-up-with-recur (range 100000) 0)
 4999950000
 {% endhighlight %}
 
-In every computer language, we can write recursive call.
-However, recursion with TCO is a Clojure specific feature.
+In every computer language, we can write recursive calls.
+However, recursion with TCO is a Clojure-specific feature.
 With TCO, Clojure is good at processing a huge list.
 
 ### References

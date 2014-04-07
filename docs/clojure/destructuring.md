@@ -8,22 +8,22 @@ author: yokolet
 
 - Advice to coaches
 
-    Examples here are easy ones, not complicated.
+    The examples here are easy ones.
     However, the idea of destructuring may not be easy to understand for beginners.
-    Please explain well how it works.<br/><br/>
+    Please explain how it works.<br/><br/>
 
 
-*Destructuriong* is a Clojure specific, special way of variable assignment (binding in Clojure).
-It enables to bind:
+*Destructuring* is a Clojure-specific way of variable assignment (binding in Clojure).
+It enables us to bind:
 
-  - each of element in vector to corresponding variables - *case 1*
-  - one of element in vector to the variable - *case 2*
-  - each value of map (key-value pairs) to the correspoding variables - *case 3*
+  - each element in a vector to corresponding variables - *case 1*
+  - one element in a vector to a variable - *case 2*
+  - each value in a map (key-value pairs) to the corresponding variables - *case 3*
 
 in a single binding.
 
 
-Let's try simple examples:
+Let's try some simple examples:
 
 {% highlight clojure %}
 user> (def my-vector [123 234 345 456 567])
@@ -93,7 +93,7 @@ user> (let [[a b & more :as all] my-vector]
         (println (str "I got " more " from " all)))
 I got (345 456 567) from [123 234 345 456 567]
 nil
-user> ; but, always & should come before :as
+user> ; but & should always come before :as
 user> (let [[a b :as all & more] my-vector]
         (println (str "I got " more " from " all)))
 CompilerException java.lang.RuntimeException: Unable to resolve symbol: more in this context, com
@@ -154,14 +154,14 @@ nil
 {% endhighlight %}
 <br/>
 
-#### Where the destructuring is used
+#### Where destructuring is used
 
   - let bindings
 
   - function parameter lists
 
-  All examples of destructuring here are in let bindings,
-  however, destructuring can be used in function parameter lists also.
+  All examples of destructuring here are in let bindings.
+  However, destructuring can also be used in function parameter lists.
 
 
 ### References

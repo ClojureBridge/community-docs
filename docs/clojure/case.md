@@ -7,8 +7,8 @@ author: yokolet
 ---
 
 The `case` macro is a similar conditional to [`cond/condp`]({{ site.baseurl}}/docs/clojure/cond/).
-It branches to mutiple clauses.
-The difference is, `case` doesn't evaluate branching expression.
+It branches to multiple clauses.
+The difference is that `case` doesn't evaluate branching expressions.
 In `case`, it should be a constant.
 What we can do with `case` looks like [`map (data structure)`]({{ site.baseurl}}/docs/clojure/hash/).
 

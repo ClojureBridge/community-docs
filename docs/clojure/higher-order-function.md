@@ -6,35 +6,35 @@ level: easy
 author: yokolet
 ---
 
-Higher-order function is:
+A higher-order function is:
 
   - a function that takes one or more functions as arguments<br/>
   or
   - a function that returns a function
 
 In other languages, this feature may have another name.
-For example, Ruby names it *block* for a callee function though caller doesn't have specific name.
+For example, Ruby names it *block* for a callee function, although the caller doesn't have specific name.
 
 In Clojure, caller functions are high-order functions while callees don't have specific names.
-Some of well known higher-order functions among core functions would be
+Some well known higher-order functions are
 [`map`]({{ site.baseurl}}/docs/clojure/map/),
 [`reduce`]({{ site.baseurl}}/docs/clojure/reduce/),
 [`remove`]({{ site.baseurl}}/docs/clojure/remove/),
-[`filter`]({{ site.baseurl}}/docs/clojure/filter/), or
+[`filter`]({{ site.baseurl}}/docs/clojure/filter/), and
 [`iterate`]({{ site.baseurl}}/docs/clojure/iterate/).
 <br/><br/>
 
-#### Function that takes functions as arguments
+#### Functions that take functions as arguments
 
 Before going to those core functions, let's try the example below.
 This example is the first type of higher-order function.
-In this example, we will create a function that does something when two vectors are given.
+In this example, we will create a function that does something when given two vectors.
 
 - Advice to coaches
 
     `concat-evens` function is the same example in
     [`anonymous function`]({{ site.baseurl}}/docs/clojure/anonymous-function/).
-    If the attendees hasn't look at Anonymous Function section and struggle to understand the example, go back the Anonymous Function section.
+    If the attendees haven't looked at the Anonymous Function section and they struggle to understand the example, go back to the Anonymous Function section.
 
 
 {% highlight clojure %}
@@ -70,7 +70,7 @@ user> (concat-some odd? [1 2 3] [4 5 6])
 user> ; yay! we created a higher-order function. concat-some takes a function as an argument.
 {% endhighlight %}
 
-As we saw above, higher-order function is useful make it generic.
+As we saw above, higher-order functions are a useful way to make functions more generic.
 <br/><br/>
 
 #### Function that returns a function

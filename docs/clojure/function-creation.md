@@ -7,9 +7,9 @@ author: yokolet
 ---
 
 Clojure is a functional programming language.
-Creating and using functions, also, creating functions to use functions are what Clojure programers do.
-Clojure has a couple of ways to create a function.
-Among them, function definition by `defn` would be the most popular one.
+Creating and using functions--and creating functions that use functions--is what Clojure programers do.
+Clojure has a number of ways to create a function.
+Defining a function with `defn` is the most popular approach.
 
 The syntax is:
 
@@ -17,16 +17,16 @@ The syntax is:
   (defn name doc-string? attr-map? [params*] body)
   ```
 
-Just above may be unclear how to write.
-It is a good idea to look at how other functions do.
-For example, let's look at source code of `+` function.
+It may not be clear how to write a function based on that syntax.
+It is a good idea to look at how other functions are defined.
+For example, let's look at the source code of `+` function.
 
 - Advice to coaches
 
     Please make sure *console* is opened if attendees are using LightTable.
-    On other repl, in some case, clojure.repl is not loaded.
-    For such case, don't forget `(use '[clojure.repl])`.
-    The `source` and `doc` function is available after that.
+    On other repl, in some cases, clojure.repl might not be loaded.
+    If so, don't forget `(use '[clojure.repl])`.
+    The `source` and `doc` functions will be available after that.
 
 {% highlight clojure %}
 user> (source +)
@@ -44,14 +44,13 @@ user> (source +)
 nil
 {% endhighlight %}
 
-Compare `defn` syntax and the actual function code.
+Compare the `defn` syntax and the actual function code.
 
   - `name` is `+`
   - `doc-string?` is "Returns the sum of nums...(snip)...See also: +'"
   - `attr-map?` is `{:inline (nary-inline...(snip)...:added "1.2"}`
   - `[params*]`s are `[]`, `[x]`, `[x y]`, and `[x y & more]`
   - `body`s follow each param. `0`,` (cast Number x)` and other
-
 
 We use `+` function like:
 {% highlight clojure %}
@@ -66,9 +65,8 @@ user=> (+ 3 4 5 6 7)  ; params [x y & more]
 {% endhighlight %}
 
 
-Also, see the function's document using `doc` function how `doc-string?`
-and other compoments will show up.
-
+You can look up the function's documentation by using the `doc` function. `doc-string?`
+and other components will be displayed.
 
 {% highlight clojure %}
 user=> (doc +)
@@ -80,8 +78,8 @@ clojure.core/+
 nil
 {% endhighlight %}
 
-Clojure has one more way to look at function.
-As in blow,  `meta` function shows what defined in `attr-map?` and some other information.
+Clojure has another way to look at functions.
+`meta` function shows the definition in `attr-map?` along with other information. See the example below:
 
 {% highlight clojure %}
 user> (meta #'+)
@@ -105,18 +103,16 @@ See [`def`]({{ site.baseurl}}/docs/clojure/def/) for what `#'+` is.
 
 Let's get back to the `defn` syntax, `(defn name doc-string? attr-map? [params*] body)`.
 
-  - We need `name`.
+  - `name` is required.
   - `doc-string?` and `attr-map?` are optional.
   - `[params*]` can take multiple forms, [], [x], [x y], [x y & more], [x & more], or [& more].
       We need at least one of them.
 
-      In other languages, there's an idea of *operator overload*,
-      and in some cases, multiple same name methods of different number of argurments exist
-      (the number of arguments is called *arity*).
-      Clojure can do in a single definition.
+      In some programming languages, you can *overload operators* or define multiple versions of the same method with different numbers of arguments.
+      The number of arguments is called *arity*. Clojure can do that in a single definition.
 <br/><br/>
 
-So far, we learned how to create the function.
+So far, we learned how to create a function.
 It's time to try your own function. Here's an example of multiple arities:
 
 {% gist 9161447 %}
@@ -133,13 +129,13 @@ user> (do-something 1 1 1)
 {% endhighlight %}
 <br/>
 
-The first example doesn't use given arguments. Next example uses arguments.
+The first example doesn't use given arguments. The next example uses arguments.
 
-This `add-up` function does:
+This `add-up` function:
 
-  - sums up given initial value and all elements in the given collection (vector or list).
-  - recursively calls itself unless given collection is empty.
-  - returns the summed up value when the given collection gets empty.
+  - sums up the given initial value and all elements in the given collection (vector or list)
+  - recursively calls itself unless the given collection is empty
+  - returns the summed up value when the given collection becomes empty
   - prints out val and coll to visualize what's going on during the recursive call (in `let` binding)
 
 (see  [`let` binding]({{ site.baseurl}}/docs/clojure/let/),
@@ -162,9 +158,9 @@ val: 9, coll: clojure.lang.PersistentList$EmptyList@1
 {% endhighlight %}
 <br/>
 
-Above is for a practice to create function.
-However, Clojure has a handy function, `reduce`.
-With `reduce`, we can get the same results as in below:
+The example above is just practice in creating functions.
+In real life, you could use `reduce` in Clojure to write simpler code.
+With `reduce`, we can get the same results with the code below:
 
 {% highlight clojure %}
 user> (reduce + 1 '(1 2))
@@ -173,8 +169,8 @@ user> (reduce + 3 [1 2 3])
 9
 {% endhighlight %}
 
-It's always good to check [Clojure Cheat Sheet](http://clojure.org/cheatsheet) or
-search online for the functions.
+It's always good to check the [Clojure Cheat Sheet](http://clojure.org/cheatsheet) or
+search online for functions.
 
 
 ### References

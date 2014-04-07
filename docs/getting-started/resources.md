@@ -6,8 +6,7 @@ level:
 author: yokolet
 ---
 
-"Where can I find resources about Clojure?", which is a question every Clojure beginner would have.
-This document puts together useful resources to get started.
+"Where can I find resources about Clojure?" is a question every Clojure beginner has. This document puts together useful resources for getting started.
 <br/><br/>
 
 
@@ -16,7 +15,7 @@ This document puts together useful resources to get started.
 - LispCast Introduction to Clojure
 
     [http://purelyfunctional.tv/intro-to-clojure](http://purelyfunctional.tv/intro-to-clojure)<br/>
-    Free access for ClojureBridge attendees/TAs available. (Thanks! LispCast)
+    Free access for ClojureBridge attendees/TAs available. (Thanks, LispCast!)
     <br/><br/>
 
 #### Programming Resources

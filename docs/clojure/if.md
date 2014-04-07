@@ -7,16 +7,16 @@ author: yokolet
 ---
 
 "If it is a good weather, I will go to a park; otherwise, I'll go to a cafe."
-This is called a "if-branching" in a programming world.
-Since the if-branching is simple conditionals, it is frequently used to devided into two states, true or false.
+This is called "if-branching" in the programming world.
+Since the if-branching uses simple conditionals, it is frequently used to divide into two states: true or false.
 
-In Clojure, `if` is a special form and the syntax is:
+In Clojure, `if` is a special form. The syntax is:
 
 `(if test then else?)` or `(if test then)`
 
-At first, [`Truthiness`]({{ site.baseurl}}/docs/clojure/truthiness/) of the *test* is checked.
-When the *test* turns out to be true, *then* gets run; otherwise, *else?* gets run if exists.
-The *else?* is optional.
+First, the [`Truthiness`]({{ site.baseurl}}/docs/clojure/truthiness/) of the *test* is checked.
+If the *test* turns out to be true, the *then* part is run; otherwise, the *else?* part is run (if specified).
+The *else?* part is optional.
 
 {% highlight clojure %}
 user> (defn my-plan
@@ -40,14 +40,11 @@ nil
 {% endhighlight %}
 
 As the `if` syntax shows, Clojure doesn't have *else if*.
-In the case, *else if* flow control is needed,
-we may use [`cond`]({{ site.baseurl}}/docs/clojure/cond/), [`case`]({{ site.baseurl}}/docs/clojure/case/), and some more conditionals.
+If you need to be able to write *else if*, you can use [`cond`]({{ site.baseurl}}/docs/clojure/cond/), [`case`]({{ site.baseurl}}/docs/clojure/case/) and some more conditionals.
 <br/><br/>
 
-In addition to `if`, some languages have an *unless* conditional.
-Clojure has `if-not` macro for unless conditional.
-
-The syntax is:
+In addition to `if`, some languages have an *unless* conditional which runs only if the test is false.
+Clojure implements this with the `if-not` macro. The syntax is:
 
 `(if-not test then else?)` or `(if-not test then)`
 
@@ -64,12 +61,11 @@ user> (my-plan3 :good)
 
 - Advice to coaches
 
-    Please mention about there's one more unless conditional. (if (not (= ....)))
-
-    This would be one example that Clojure has many ways to do the same thing.
+    You can show the other way to implement *unless*: (if (not (= ....)))
+    This would be an example of how Clojure has many ways to do the same thing.
 <br/><br/>
 
-Moreover, Clojure has an unique way of using `if` conditional with [`let`]({{ site.baseurl}}/docs/clojure/let/) binding.
+In addition, Clojure has a unique way of using the `if` conditional with the [`let`]({{ site.baseurl}}/docs/clojure/let/) binding.
 It is `if-let` macro, which is useful when we want to use the result of *test*.
 
 The syntax is:

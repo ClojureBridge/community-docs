@@ -6,12 +6,9 @@ level: easy
 author: yokolet
 ---
 
-While coding, programmers often add comments for some reasons.
-When they want to explain code, tempoary comment out code, or etc,
-comments are used.
+Programmers often add comments for various reasons, such as explaining code or temporarily disabling code.
 
-
-Clojure has three ways to write comments or comment out.
+Clojure has three ways to add comments or comment out a section.
 
   - `comment` macro
   - `;` reader macro
@@ -20,10 +17,10 @@ Clojure has three ways to write comments or comment out.
 
 #### `comment` macro
 
-The syntax is like functions `(comment & body)`.
+The syntax is like a function: `(comment & body)`.
 
-With this comment style, we can write multi-line comments,
-or comment out multi-line code block.
+With this comment style, we can write multi-line comments
+or comment out multi-line code blocks.
 
 {% gist 9301920 %}
 <br/>
@@ -31,7 +28,7 @@ or comment out multi-line code block.
 #### `;` (semicolon) reader macro
 
 This is used to comment out a single line.
-Clojure ignores from `;` (semicolon) to the end of the line.
+Clojure ignores everything from the `;` (semicolon) to the end of the line.
 
 {% highlight clojure %}
 user> (+ 1 2) ; the answer is 3
@@ -49,7 +46,7 @@ user> my-number
 #### `#_` reader macro
 
 This is used to comment out a form.
-For example, corresponding `(` and `)`, or `[` and `]`.
+For example, a corresponding pair of `(` and `)`, or `[` and `]`.
 The form can be nested.
 
 {% highlight clojure %}
