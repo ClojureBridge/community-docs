@@ -6,13 +6,13 @@ level: easy
 author: yokolet
 ---
 
-String is, probably, the most frequenty used data structure in all languages.
-However, the idea of strings really varies language to language.
+The string is probably the most frequently-used data structure in all languages.
+However, the idea and implementation of a string varies from language to language.
 
-In Clojure, strings are text between a pair of `"`(double quote).
+In Clojure, strings are text between a pair of `"`(double quote) characters.
 The `'`(single quote) isn't used to express strings in Clojure.
-When we want to use double quote within a string,
-that must be escaped by `\`(backslash).
+When we want to use double quotes within a string,
+they must be escaped by `\`(backslash).
 
 {% highlight clojure %}
 user> (def kind "a rose")
@@ -38,14 +38,14 @@ user> ; a single quote is a syntax quote, so Clojure sees there are 'a and rose'
 {% endhighlight %}
 <br/>
 
-Clojure strings are `java.lang.String`.
+Clojure strings have the type `java.lang.String`.
 This means Clojure strings can use all methods defined for java.lang.String.
-See, Java API document, [http://docs.oracle.com/javase/7/docs/api/java/lang/String.html](http://docs.oracle.com/javase/7/docs/api/java/lang/String.html).
+See the Java API document: [http://docs.oracle.com/javase/7/docs/api/java/lang/String.html](http://docs.oracle.com/javase/7/docs/api/java/lang/String.html).
 
 - Advice to coaches
 
-    This document doesn't have section for Java interoperability.
-    Please mention about Java method invocation on Clojure briefly.
+    This document doesn't have a section for Java interoperability.
+    Please talk about Java method invocation on Clojure briefly.
 
 
 {% highlight clojure %}
@@ -69,13 +69,13 @@ user> (.length "rose")
 {% endhighlight %}
 <br/>
 
-Other than methods of java.lang.String, Clojure functions also work for strings.
+In addition to the methods of java.lang.String, Clojure functions also work for strings.
 
 
-- Advise to coaches
+- Advice to coaches
 
-    Links to string related functions are listed in References.
-    Tell attendees to try some other functions looking at documents.
+    Links to string-related functions are listed in References.
+    Tell attendees to try some other functions by looking at documents.
 
 {% highlight clojure %}
 user> (compare "rose" "roses") ; the same as java.lang.String's compareTo method
@@ -103,7 +103,7 @@ In Clojure, strings are seq-able.
 Clojure functions for seq also work for strings.
 When those functions are used on strings, `Character` type values are returned.
 
-Characters are like strings, `java.lang.Character` type and expressed as `\` followed by a single letter.
+Characters have the `java.lang.Character` type and are expressed as `\` followed by a single letter.
 
   - take-nth : [http://clojuredocs.org/clojure_core/clojure.core/take-nth](http://clojuredocs.org/clojure_core/clojure.core/take-nth)
   - rest : [http://clojuredocs.org/clojure_core/clojure.core/rest](http://clojuredocs.org/clojure_core/clojure.core/rest)

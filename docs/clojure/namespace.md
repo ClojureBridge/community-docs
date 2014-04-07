@@ -6,15 +6,11 @@ level: easy
 author: yokolet
 ---
 
-Namepace exists to form a group of related functions, vars and others.
-What if there's no namespace in Clojue? The world wil be chaos.
-Her libary and your library may have the same name but different function.
-How can you differentiate hers from yours of the same name?
-For this purpose, namespace exists.
-Also, you are always in a namespace when you do some stuffs on repl.
+A namespace groups related functions, vars, and other things.
+Without namespaces, different functions with the same names would interfere and cause problems.
+Even in a REPL, you always work within a namespace.
 
-
-The repl prompt below should be familiar to you alreay.
+The repl prompt below is probably familiar to you already.
 {% highlight clojure %}
 user=>
 {% endhighlight %}
@@ -33,7 +29,7 @@ nil
 {% endhighlight %}
 
 
-Let's create a new namespace. To accomplish this task, you have three function choices.
+Let's create a new namespace. You can do this in three ways:
 
 {% highlight clojure %}
 user=> ; below creates a new namespace if necessary and stays on the current namespace
@@ -58,10 +54,10 @@ user=>
 
 - Advice to coaches
 
-    Please explain the differences of above three functions a little, for example, using `doc` function. If the namespce has been changed by `in-ns`, doc function works with namespace, for example,  `(clojure.repl/doc clojure.core/in-ns)`.
+    Please explain the differences of the three functions, perhaps by using the `doc` function. If the namespace has been changed by `in-ns`, you can call the `doc` function using its namespace. For example:  `(clojure.repl/doc clojure.core/in-ns)`.
 
 <br/>
-Confirm var names are different on each namespace.
+You can confirm that var names are different in each namespace.
 {% highlight clojure %}
 user=> (def abc 123)  ; creates a var, #'user/abc
 #'user/abc
@@ -88,14 +84,13 @@ my.third.ns=> user/abc
 
 
 
-So far, we learned how to create the namespace. Next step is to use the namespaces.
-This happens very often since almost all Clojure programs use some or many libraries.
-Every libaries are grouped by their own namespaces.
+So far, we have learned how to create a namespace. The next step is to use namespaces.
+You will do this very often because almost all Clojure programs use some or many libraries.
+Every library groups functions into its own namespace.
 
-To use namespaces, we want at least two different namespaces and function in those.
+To explore namespaces, we want to set up at least two different namespaces and different functions in those namespaces.
 
-Create a Clojure project and write two Clojure code, `one.clj` and `two.clj`.
-
+Create a Clojure project and write two Clojure files, `one.clj` and `two.clj`.
 
 {% highlight bash %}
 $ lein new my-nses
@@ -112,9 +107,9 @@ Both `one.clj` and `two.clj` should be in the my-nses/src/my_nses directory.
 
 {% gist 8293748 %}
 
-If the code is ready, start repl at the my-nses (top) directory.
-To use our code, we have two choices, `use` and `require` functions.
-For the first attempt, we will use `use` function.
+Once the code is ready, start repl in the my-nses (top) directory.
+To use our code, we have two choices: `use` or `require`.
+For the first attempt, we will use the `use` function.
 
 {% highlight clojure %}
 user=> (use 'my-nses.one)
@@ -127,7 +122,7 @@ Welcome!  Clojure
 nil
 user=> (area 4 6)
 12.0
-user=> ; it looks working yay!
+user=> ; it looks like it's working, yay!
 
 user=> (use 'my-nses.two)
 
@@ -141,14 +136,14 @@ nil
 user=> (greeting "Clojure")
 Hello!  Clojure
 nil
-user=> ; but, how can we use area function in my-nses.two namespace ?
+user=> ; but how can we use the area function in my-nses.two namespace ?
 {% endhighlight %}
 
-As we tried, `use` function loads functions of specified namespace(s) to
-current namespace. So, duplication ends up in the exception.
+As we tried, `use` function loads the functions of the specified namespace(s) into
+current namespace. If you have a duplicate function, that will result in an exception.
 
-In the next attempt, we use `require` function.
-This resolves the trouble happened above.
+In the next attempt, we will use the `require` function.
+This resolves the error that happened above.
 
 {% highlight clojure %}
 user=> (require 'my-nses.two)
@@ -157,7 +152,7 @@ user=> (my-nses.two/area 1 1)
 4
 user=> ; but every time, we need to type, m, y, -, n, s, e, s, ., t, w, o ?
 
-user=> ; no, we can setup shortcut
+user=> ; no, we can set up a shortcut
 
 user=> (require '[my-nses.two :as two])
 nil
@@ -165,14 +160,14 @@ user=> (two/area 2 0)
 6
 user=> (two/area 2 1)
 7
-user=> ; still we can use functions in my-nses.one namespace
+user=> ; we can still use functions in my-nses.one namespace
 
 user=> (area 2 1)
 1.0
 {% endhighlight %}
 
 
-We tried just a part of namespace mangement functions. Clojure has more ways to avoid function name collision. Also, requiring or using other namespaces not on repl is slightly different.
+We tried just some of the namespace management functions. Clojure has more ways to avoid function name collision. If you're not using a repl, requiring or using other namespaces is slightly different.
 
 Please see references for details:
 

@@ -6,24 +6,21 @@ level: easy
 author: yokolet
 ---
 
-The *for loop* is a typical idea in a comuputer languagne.
+The *for loop* is a common concept in computer languages.
 When we want to apply the same logic (operations) to each element of a given array (vector or list in Clojure),
-we apply the idea of *for loop* to that.
-In general, incrementing (or decrementing) an index of array, something same is done on each element.
-However, a way of realizing the *for loop* varies language to language.
-Some use the index explicitely, others use an iterator.
-Or, some don't use neither index nor iterator.
-Among them, Clojure takes very different approach.
+we apply the idea of a *for loop* to that.
+In general, this involves incrementing (or decrementing) an index and performing a similar function on each element.
+However, the way to implement a for loop varies from language to language.
+Some use an index variable explicitly. Others use an iterator. Some use neither.
+Clojure takes a very different approach.
 <br/><br/>
 
-Clojure's `for` is a sort of loop what it is in other languages.
-But, it is categorized to a sequence operator like
-[`map`]({{ site.baseurl}}/docs/clojure/map/)(core function) or
+Clojure's `for` is categorized as a sequence operator, like [`map`]({{ site.baseurl}}/docs/clojure/map/)(core function) or
 [`reduce`]({{ site.baseurl}}/docs/clojure/reduce/).
-More importantly, in Clojure, `for` is a *list comprehension*, which means it creates a list from a given list. 
+More importantly, in Clojure, `for` is used for *list comprehension*, which means it creates a list from a given list. 
 <br/><br/>
 
-The syntax of `for` macro is:
+The syntax of the `for` macro is:
 `(for [binding-form coll-expr filter-expr?] expr)`
 
 Try some examples.
@@ -32,11 +29,11 @@ user> (for [w ["LOVe" "coding" "hEllo" "worLD!"]]  ; like let, *for* takes bindi
            (clojure.string/capitalize w))
 ("Love" "Coding" "Hello" "World!")
 
-user> ; we can get the same result using *map* core function
+user> ; we can get the same result using the *map* core function
 user> (map clojure.string/capitalize ["LOVe" "coding" "hEllo" "worLD!"])
 ("Love" "Coding" "Hello" "World!")
 
-user> ; only when length of the word exceeds 5
+user> ; include only when length of the word exceeds 5
 user> (for [w ["LOVe" "coding" "hEllo" "worLD!"] :when (> (count w) 5)]
            (clojure.string/capitalize w))
 ("Coding" "World!")
@@ -46,7 +43,7 @@ user> (for [w ["LOVe" "coding" "hEllo" "worLD!"] :let [length (count w)]]
            (str (clojure.string/capitalize w) ": " length))
 ("Love: 4" "Coding: 6" "Hello: 5" "World!: 6")
 
-user> ; when multiple vectors are inputs...
+user> ; when the input consists of multiple vectors
 user> (for [x ["a" "b" "c"]
               y ["a" "b" "c"]
               z ["a" "b" "c"]]

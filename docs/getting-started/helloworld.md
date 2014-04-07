@@ -6,7 +6,7 @@ level: easy
 author: yokolet
 ---
 
-This is always the first tiny baby step to learn programing language.
+This is always the first tiny baby step when learning a programming language.
 Let's try "Hello, World!" in Clojure.
 
 #### On repl
@@ -42,12 +42,12 @@ user=> (pr-str "Hello World")
 
 - Advice to coaches
 
-    If this is the first Clojure code, please explain Clojure's syntax; parenthesis, function, argument, etc.
-    Additionally, explain the difference above (if necessary). For example, `prn` is for `reader`, while `println` is for human consumption. <br/><br/>
+    If this is the first Clojure code, please explain Clojure's syntax: parenthesis, function, argument, etc.
+    Explain the different functions above, if necessary. For example, `prn` is for `reader`, while `println` is for human consumption. <br/><br/>
 
 
 #### Hello World by runnable program
-Create a bran new Clojure project:
+Create a brand new Clojure project:
 {% highlight bash %}
 bash-3.2$ lein new helloworld
 {% endhighlight %}
@@ -65,4 +65,4 @@ Hello, World!
 
 - Advice to coaches
 
-    This is an optional lab work. When tried, explain moving parts of Clojure Project. For example, what is `project.clj` or namespace. But, don't need to be in detail. Other labs will cover those topics. This lab is to get familiar with Clojure programming.
+    This is an optional lab work. After it is tried, explain the moving parts of a Clojure project, such as `project.clj` and namespaces. You don't have to explain it in detail, because other labs will cover those topics. This lab is to get familiar with Clojure programming.

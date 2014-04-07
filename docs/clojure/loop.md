@@ -6,12 +6,12 @@ level: easy
 author: yokolet
 ---
 
-The `loop` special form is, unlike its name, not a so-to-speak *for loop* itself.
-The usage of `loop` is the same as [`let`]({{ site.baseurl}}/docs/clojure/let/) binding.
+The `loop` special form is not like a *for loop*.
+The usage of `loop` is the same as the [`let`]({{ site.baseurl}}/docs/clojure/let/) binding.
 However, `loop` sets a *recursion point*.
 The *recursion point* is designed to use with [`recur`]({{ site.baseurl}}/docs/clojure/recur/),
 which means `loop` is always used with `recur`.
-To make loop happen, `recur`'s number of arguments (*arity*) must coinside with the number of bindings. That way, `recur` loops back to `loop`.
+To make a loop happen, the number of arguments (*arity*) specified for `recur`'s must coincide with the number of bindings for `loop`. That way, `recur` goes back to `loop`.
 
 
 The syntax is: `(loop [bindings*] exprs*)`
@@ -22,11 +22,11 @@ user> (loop [coll ["hello" "world" "love" "coding"] result "Words: "]   ; 2 bind
             (recur (rest coll) (str result (first coll) ", "))))  ; arity 2
 "Words: hello, world, love, coding"
 {% endhighlight %}
-Compare the exmple above to the one in [`recur`]({{ site.baseurl}}/docs/clojure/recur/).
+Compare the example above with the one in [`recur`]({{ site.baseurl}}/docs/clojure/recur/).
 <br/><br/>
 
-For a loop exercise, let's think about how to calculate the sum of the geometric series ([http://en.wikipedia.org/wiki/Geometric_series](http://en.wikipedia.org/wiki/Geometric_series).
-The well-known geometric series is 1/2 + 1/4 + 1/8 + 1/16 + ...., which converges to 1.
+For a loop exercise, let's think about how to calculate the sum of a geometric series ([http://en.wikipedia.org/wiki/Geometric_series](http://en.wikipedia.org/wiki/Geometric_series).
+A well-known geometric series is 1/2 + 1/4 + 1/8 + 1/16 + ...., which converges to 1.
 
   - inc [http://clojuredocs.org/clojure_core/clojure.core/inc](http://clojuredocs.org/clojure_core/clojure.core/inc)
   - Math/pow [http://docs.oracle.com/javase/7/docs/api/java/math/BigInteger.html#pow(int)](http://docs.oracle.com/javase/7/docs/api/java/math/BigInteger.html#pow(int))
@@ -66,7 +66,7 @@ user> ; converged to 1
 
     <a href="http://clojure.org/special_forms#Special%20Forms--(loop%20[bindings*%20]%20exprs*)">http://clojure.org/special_forms#Special%20Forms--(loop%20[bindings*%20]%20exprs*</a>
 
-- Intrduction to Clojure, Looping and Recursion
+- Introduction to Clojure, Looping and Recursion
 
     [http://clojure-doc.org/articles/tutorials/introduction.html#looping-and-recursion](http://clojure-doc.org/articles/tutorials/introduction.html#looping-and-recursion)
 

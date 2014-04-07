@@ -6,19 +6,18 @@ level: easy
 author: yokolet
 ---
 
-The `cond` macro is, like [`if`]({{ site.baseurl}}/docs/clojure/if/) conditional,
+The `cond` macro works like the way the [`if`]({{ site.baseurl}}/docs/clojure/if/) conditional
 does branching. Unlike `if`, `cond` can take multiple tests and corresponding clauses.
 Since Clojure doesn't have *else if*, cond is used for that purpose.
-For example, below needs three tests.
+The example below needs three tests.
 
   - if a temperature is over 65F, I'll enjoy walking at a park.
   - if a temperature is lower than 65F and higher than 45F, I'll spend time at a cafe.
   - if a temperature is below 45F, I'll crawl in my bed.
 
-In this case, we can't use `if`, but can do by `cond`.
+In this case, we can't use `if`, but we can do this with `cond`.
 
 The syntax is: `(cond & clauses)`
-
 
 {% highlight clojure %}
 user> (defn what-to-do

@@ -6,12 +6,12 @@ level: easy
 author: yokolet
 ---
 
-The `filter` function is one of well-used [`higher-order function`]({{ site.baseurl}}/docs/clojure/higher-order-function/)s.
+The `filter` function is a commonly-used [`higher-order function`]({{ site.baseurl}}/docs/clojure/higher-order-function/)s.
 It takes a function as an argument.
-The `filter` function works as its name shows.
-It filters out values in a sequence that doesn't meet the given condition.
-To fullfill this filtering feature, the function takes a fucntion and sequence for its arguments.
-The function given to the `filter` must return truthy value, which is called a *predicate function*.
+The `filter` function works as its name implies.
+It filters out values in a sequence that don't meet the given condition.
+To perform this filtering, `filter` takes a function and a sequence for its arguments.
+The function given to the `filter` must return a truthy value, and is called a *predicate function*.
 (see [`Truthiness`]({{ site.baseurl }}/docs/clojure/truthiness))
 
 The syntax is: `(filter pred coll)`
@@ -27,9 +27,9 @@ user=> (filter odd? (range 10))
 {% endhighlight %}
 
 
-We can use [`anonymous function`]({{ site.baseurl}}/docs/clojure/anonymous-function) for filtering.
-The next example defines flower list as a map (data structure) with simple keys and colors as values.
-From this map, picking up yellows, or pinks are shown below.
+We can use an [`anonymous function`]({{ site.baseurl}}/docs/clojure/anonymous-function) for filtering.
+The next example defines a flower list as a map (data structure) with simple keys and colors as values.
+From this map, the code below selects yellows or pinks.
 {% highlight clojure %}
 user=> ; defines a flowers list as a map
 user=> (def flowers
@@ -48,8 +48,8 @@ user=> (filter #(= "pink" (second %)) flowers)
 {% endhighlight %}
 
 
-Also, we can use the function we defined for filtering.
-The third example picks up palindromic numbers between 1000 and 4999.
+We can also use the function we defined for filtering.
+The third example selects palindromic numbers between 1000 and 4999.
 (see palindrome: [http://en.wikipedia.org/wiki/Palindromic_number](http://en.wikipedia.org/wiki/Palindromic_number))
 
 {% highlight clojure %}

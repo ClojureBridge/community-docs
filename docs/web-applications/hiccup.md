@@ -7,10 +7,10 @@ author: yokolet
 ---
 
 A web application is there to send back HTML (and Javascript/Stylesheet) to a web browser.
-HTML may be a statically created file, or a dynamically created by a program.
-This section is about how to create HTML dynamically by Clojure.
+HTML may be a statically created file, or it can be dynamically created by a program.
+This section is about how to create HTML dynamically with Clojure.
 
-In Clojure world, there are some HTML generation tools:
+In Clojure world, there are a number of HTML generation tools:
 
   - [Hiccup](https://github.com/weavejester/hiccup)
   - [Enlive](https://github.com/cgrand/enlive)
@@ -18,32 +18,33 @@ In Clojure world, there are some HTML generation tools:
   - [Hoplon](http://hoplon.io/)
   - etc.
 
-Among them, this document picks up the most commonly used, simple tool, Hiccup.
+This document focuses on Hiccup, which is simple and commonly used.
+
 <br/><br/>
 
 #### Project setup
 
-Since Hiccup is not included in Clojure, we need to get a Hiccup library first.
-We do this by three steps below:
+Since Hiccup is not included in Clojure, we need to get the Hiccup library first.
+We do this by following the three steps below:
 
-  1. create Clojure project
+  1. Create a Clojure project
 
      ```
      lein new hello-hiccup
      ```
 
-  2. add Hiccup to dependencies to project.clj
+  2. Add Hiccup to dependencies to project.clj
 
       - `cd hello-hiccup`
-      - open project.clj with your favorit editor
-      - add [hiccup "1.0.5"] to dependencies<br/><br/>
+      - open project.clj with your favorite editor
+      - add [hiccup "1.0.5"] to the dependencies<br/><br/>
 
       The project.clj will look like below:
 
       {% gist 9358960 %}
 
 
-  3. start repl (this triggers to download Hiccup archive)
+  3. Start repl (this triggers to download Hiccup archive)
 
       ```
       lein repl
@@ -55,12 +56,12 @@ We do this by three steps below:
     To try Hiccup examples here on LightTable, we need some extra steps.
 
     1. Before connecting to instarepl, open `src/hello-hiccup/core.clj`
-    2. add hiccup.core to ns form.
+    2. Add hiccup.core to ns form.
 
         {% gist 9359173 %}
 
-    3. evaluate core.clj by cmd-enter (this resovles dependencies on LightTable)
-    4. open instarepl
+    3. Evaluate core.clj by cmd-enter (this resolves dependencies on LightTable)
+    4. Open instarepl
     <br/><br/>
 
 #### Try on repl
@@ -78,7 +79,7 @@ nil
 user=> (use 'hiccup.form)
 nil
 user=> ; everything is loaded on the repl
-user=> ; let's try some html tags
+user=> ; let's try some HTML tags
 
 user=> (html
   #_=> [:div {:class "url"}
@@ -95,7 +96,7 @@ user=> (html5
 user=> ; HTML form tags
 user=> (label :hello "clojure")         ; generates Clojure data
 [:label {:for "hello"} "clojure"]
-user=> (html (label :hello "clojure"))  ; html macro converts it to html
+user=> (html (label :hello "clojure"))  ; html macro converts it to HTML
 "<label for=\"hello\">clojure</label>"
 
 user=> (text-field :title)
@@ -116,9 +117,9 @@ user=> (html (select-options colors))
 {% endhighlight %}
 
 
-- Advise to coaches
+- Advice to coaches
 
-    It's a good idea to look at Hiccup API doc and try some more tags.
+    It's a good idea to look at the Hiccup API docs and try some more tags.
     <br/><br/>
 
 ### References

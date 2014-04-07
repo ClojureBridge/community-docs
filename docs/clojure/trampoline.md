@@ -6,19 +6,18 @@ level: intermediate
 author: yokolet
 ---
 
-The `trampoline` function is used to optimize a mutually recursive function relations.
-This function is effective when recursive call is not an explicit tail recursive.
+The `trampoline` function is used to optimize a mutually recursive function relation.
+This function is effective when a recursive call does not use explicit tail recursion.
 
 The syntax is: `(trampoline f) (trampoline f & args)`
 
 - Advice to coaches
 
-  The example blow prints out to standard output.
-  If the attendees are using LightTable, they need to open console to see the result.
-  Also, be careful.
-  After trying this example on Instarepl, a response of the Instarepl may become very slow.
+  The example below prints out to standard output.
+  If the attendees are using LightTable, they need to open the console to see the result.
+  Be careful. After trying this example on Instarepl, a response of the Instarepl may become very slow.
 
-If we don't use trampline, the example below will raise "java.lang.StackOverflowError: null".
+If we don't use trampoline, the example below will raise "java.lang.StackOverflowError: null".
 
   - declare: [http://clojuredocs.org/clojure_core/clojure.core/declare](http://clojuredocs.org/clojure_core/clojure.core/declare)
   - rand-int: [http://clojuredocs.org/clojure_core/clojure.core/rand-int](http://clojuredocs.org/clojure_core/clojure.core/rand-int)
@@ -32,17 +31,17 @@ user=> (incrementor 500)
 StackOverflowError   java.lang.ReflectiveOperationException.<init> (ReflectiveOperationException.java:89)
 {% endhighlight %}
 
-The two functions, *incrementor* and *descrementor*, call each other.
-The `declare` is used to define this sort of mutual call functions.
-Since Clojure interprets from to to bottom, *decrementor* function in *incrementor* function can't be found without `declare`.
+The *incrementor* and *decrementor* functions call each other.
+`declare` is used to define this sort of mutual call functions.
+Since Clojure interprets from top to bottom, the *decrementor* function in *incrementor* function can't be found without `declare`.
 <br/>
 
-To avoid StackOverFlowError, we can use `trampoline` function.
-This function takes function and a given function's argument(s).
-While the given function returns a function, `trampoline` keeps calling the give function without an argument.
+To avoid StackOverflowError, we can use the `trampoline` function.
+This function takes a function and the given function's argument(s).
+While the given function returns a function, `trampoline` keeps calling the given function without an argument.
 
 To use `trampoline`, we need to change *incrementor* and *decrementor* so that those will return a function. Changing it to [`anonymous function`]({{ site.baseurl}}/docs/clojure/anonymous-function) does the job.
-Below is a trampline-able functions.
+Below is a trampoline-able functions.
 
 {% gist 9866286  %}
 
@@ -57,12 +56,11 @@ user=> (trampoline incrementor2 500)
 9995, 9955, 9970, 9959, 10048, nil
 {% endhighlight %}
 
-
 In the first example, we wrote functions to call each other.
-However, we can use Clojure's core functions or macros wrapped in an anonymous function.
+We can use Clojure's core functions or macros wrapped in an anonymous function.
 Let's look at the second example below.
-Both *right-and-left* and *right-and-left* functions moves a cursor right and left.
-For example,
+Both the *right-and-left* and *right-and-left* functions move a cursor right and left.
+For example:
 
   size 3: right, right, left, done
 
@@ -70,9 +68,9 @@ For example,
 
   size 5: right, right, right, right, left, left, left, right, right, left, done
 
-As we looked at the first example, *right-and-left* function raises StackOverFlowError when the size gets bigger while trampoline-ed *right-and-left2* function doesn't.
-Additionally, the second example doesn't use `declare`.
-Instead, it defines local function within `letfn` scope.
+As we saw in the first example, *right-and-left* function raises StackOverflowError when the size gets bigger. The *right-and-left2* function that uses trampoline doesn't.
+In addition, the second example doesn't use `declare`.
+Instead, it defines a local function within the `letfn` scope.
 
   - letfn: [http://clojuredocs.org/clojure_core/clojure.core/letfn](http://clojuredocs.org/clojure_core/clojure.core/letfn)
 

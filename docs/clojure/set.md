@@ -6,12 +6,11 @@ level: easy
 author: yokolet
 ---
 
-The *set* is one of data strucrues. Every computer language has this data structure.
-It looks like array (vector in Clojure), but every element is unique.
-The elements' order is not guaranteed.
+The *set* is a data structures. Most computer languages have this data structure.
+It looks like an array (or a vector, in Clojure terms), but every element is unique.
+Elements are stored in no particular order.
 
-We can create *set* data structure by `set` function.
-Also, we can create it by var binding.
+We can create *set* data structures by using the `set` function. We can also create it with var binding.
 
 The syntax is: `(set coll)`
 
@@ -25,9 +24,8 @@ user=> my-set
 #{"Jun" "Apr" "Feb" "May" "Jan" "Mar"}
 {% endhighlight %}
 
-Let's try more examples.
-For examples below, we will use sentences from "Pride and Prejudice," Chapter 59.
-Copy and paste this to repl.
+Let's try more examples. We will use sentences from "Pride and Prejudice," Chapter 59.
+Copy and paste this into your repl.
 
 {% gist 9967875 %}
 

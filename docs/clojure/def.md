@@ -6,11 +6,11 @@ level: easy
 author: yokolet
 ---
 
-In other languages, a variable assignement looks like `var myvar = "something"`, `@myvar = "something"`, or `String myVar = "something"`.
+In other languages, a variable assignment looks like `var myvar = "something"`, `@myvar = "something"`, or `String myVar = "something"`.
 
-Clojure does a bit different way. Besides, Clojure doesn't call it the variable assignment. It is *var binding*, and whose idea is a bit different from assignement in other languages.
+Clojure does things in a different way. First, Clojure doesn't call it a variable assignment. It is a *var binding*, and this idea is a bit different from assignment in other languages.
 
-In Clojure, syntax is `(def var-name var-value)`.
+In Clojure, the syntax is `(def var-name var-value)`.
 
 {% highlight clojure %}
 user=> (def my-number 234)
@@ -31,15 +31,13 @@ user=> ; what's the difference?
 
 - Advice to coaches
 
-    If attendees don't know what is a variable, please explain briefly.
+    If attendees don't know what a variable is, please explain briefly.
     The difference between `my-number` and `user/my-number` would be worth mentioning.
-    Precisely, a namespace will have a new binding from Symbol to Var
-    when def function is used.
-    Then, each Var will have its value.
-
+    A namespace will have a new binding from Symbol to Var when the def function is used.
+    Then each Var will have its value.
 
     Also, it would be helpful to talk about global Vars and namespaces.
-    However, the namespace has it's own section. Don't need to be in detail.
+    However, the namespace has its own section, so you don't need to go into detail.
 
 Try some examples.
 
@@ -64,16 +62,16 @@ user=> (def original-plus +) ; saves its original one to make it back later
 user=> (def + str) ; binds + to str function
 WARNING: + already refers to: #'clojure.core/+ in namespace: user, being replaced by: #'user/+
 #'user/+
-user=> (+ "a" "b") ; now string concatination works by +
+user=> (+ "a" "b") ; now string concatenation works by +
 "ab"
-user=> (+ 1 2) ; but this doesn't work as an arithmetic operation anymore
+user=> (+ 1 2) ; but this doesn't work as an arithmetic operation any more
 "12"
 user=> (def + original-plus) ; re-binds to original-plus
 #'user/+
 user=> (+ 1 2) ; back to normal
 3
 
-user=> ; also user defined functions can be bound to
+user=> ; user defined functions can be bound too
 
 user=> (def ten-times (fn [x] (* 10 x)))
 #'user/ten-times
@@ -85,16 +83,16 @@ clojure.lang.Symbol
 user=> (def 'abc 123)
 
 CompilerException java.lang.RuntimeException: First argument to def must be a Symbol, compiling:(NO_SOURCE_PATH:1:1)
-user=> ; Don't put quote before Var name. It is interpretted as (def (quote abc) 123).
+user=> ; Don't put quote before Var name. It is interpreted as (def (quote abc) 123).
 {% endhighlight %}
 
 - Advice to coaches
 
     The main purpose of this lab is to learn how to use Vars after those are bound.
-    If attendees haven't studied how to write function, lab using function is optional.
+    If attendees haven't studied how to write functions, the lab using functions is optional.
 
 
-What if you don't remember you created Var? Or, if you want to test the Var exists, use `resolve` function with Symbol style of Var name.
+What if you don't remember that you created a Var? If you want to test if a Var exists, use the `resolve` function with the Symbol style of the Var name.
 
 {% highlight clojure %}
 user=> (def abc 123)

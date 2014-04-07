@@ -7,9 +7,9 @@ author: yokolet
 ---
 
 Is it true or false? This test is used very often while coding.
-A form of testing true/false may not straight forward.
-Sometimes it is a result of function, a variable or combination of those.
-But, the rule is simple. Try examples and see what makes it true or false.
+The form for testing true/false may not be straightforward.
+Sometimes it is a result of function, a variable, or a combination of those.
+But the rule is simple. Try the following examples and see what makes it true or false.
 
 
 #### On repl
@@ -36,9 +36,9 @@ true
 
 - Advice to coaches
 
-    Above are testing whether values are true or false. In contrast, examples below are truthy or falsey.
+    The examples above test whether values are true or false. In contrast, examples below are truthy or falsey.
 
-    Since these are pretty easy lab, it may be a good time to explain `(doc false?)` or usage of function of function, like `(not (true? (= 3 4)))`.
+    Since this is a pretty easy lab, it may be a good time to explain `(doc false?)` or the usage of functions of functions, like `(not (true? (= 3 4)))`.
 
 #### On repl
 
@@ -67,6 +67,6 @@ user=> (if-not (= 3/2 9/6) :it-isn't-truthy :it-is-truthy)
 
 - Advice to coaches
 
-    Pleaae explain the rule of truthy and falsey. Only false and nil fall on falsey, others are all truthy. If possible, let attendees to create their own if/if-not examples.
+    Pleaae explain the rule of truthy and falsey. Only false and nil are falsey. All others are truthy. If possible, let attendees create their own if/if-not examples.
 
-    For attendees who have programming background, it may be interesting to talk about the result of `(if (Boolean. "false") :truthy :falsey)`.
+    For attendees who have programming backgrounds, it may be interesting to talk about the result of `(if (Boolean. "false") :truthy :falsey)`.

@@ -7,13 +7,13 @@ author: yokolet
 ---
 
 Which one is bigger, `nil` or `0`?<br/>
-Yes, it is a weird question since nil and 0 are completely different type of things.
+It's a weird question, since nil and 0 are completely different type of things.
 
 {% highlight clojure %}
 user=> (< nil 0)
 
 NullPointerException   clojure.lang.Numbers.ops (Numbers.java:942)
-user=> ; cant' compare since those are different things
+user=> ; can't compare since those are different things
 
 user=> ; but we know those are different
 
@@ -21,9 +21,9 @@ user=> (not= nil 0)
 true
 {% endhighlight %}
 
-Computer languages have idea of *types* to express different things, so does Clojure.
+Computer languages have the idea of *types* to express different things. So does Clojure.
 
-Clojure has three big type groups, basic types, data structures, and other miscellaneous types.
+Clojure has three big type groups: basic types, data structures, and other miscellaneous types.
 
 ####  basic types
 
@@ -95,13 +95,13 @@ user=> ; and more
 - Advice to coaches
 
     Please focus on basic types here. There are other labs for data structures.
-    However, if the attendees don't know what is data structure, it will be nice to explain a little.
-    Other types are optional. Probably, we don't need to care much about examples in other types.
+    However, if the attendees don't know what a data structure is, it will be nice to explain a little.
+    Other types are optional. We probably don't need to care much about examples in other types.
 
 
 #### Comparison and Equalities
 
-Now, we know more about types. Let's try some comparisons. Below are few examples, try your own comparison or equalities.
+Now we know more about types. Let's try some comparisons. Below are few examples. Try your own comparisons or equalities.
 
 {% highlight clojure %}
 user=> ; number types are comparable even though types are different
