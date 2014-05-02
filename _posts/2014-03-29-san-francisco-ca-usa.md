@@ -42,9 +42,9 @@ description: "May 2 - May 3, 2014"
 |:-----------:|------------------------------------------|----------------------------------|
 | 9:00 - 9:30 | Registration and Coffee | Socialising, grouping |
 | 9:30 - 9:45 | Opening | Welcome announcements <br/>Instructions on how the workshop will go |
-| 9:45 - 10:45 | Workshop 1, Intro to Clojure | Lecture: approx. 40 mins in total<br/>Lab work, Q&A: approx. 20 mins in total, in each group |
+| 9:45 - 10:45 | Workshop 1, Intro to Clojure, Data Structures | Lecture: approx. 40 mins in total<br/>Lab work, Q&A: approx. 20 mins in total, in each group |
 | 10:45 - 11:00 | Break | |
-| 11:00 - 12:00 | Workshop 2, Data structures and functions |  Lecture: approx. 40 mins in total<br/>Lab work, Q&A: approx. 20 mins in total, in each group |
+| 11:00 - 12:00 | Workshop 2, Functions |  Lecture: approx. 40 mins in total<br/>Lab work, Q&A: approx. 20 mins in total, in each group |
 | 12:00 - 1:00 | Lunch and (optional) Lightning Talks | |
 | 1:00 - 2:10 | Workshop 3, Flow control and logic | Lecture: approx. 45 mins in total<br/>Lab work, Q&A: approx. 25 mins in total, in each group |
 | 2:10 - 2:25 | Break | |
