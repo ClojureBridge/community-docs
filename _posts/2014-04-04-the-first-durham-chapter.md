@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Durham, NC, USA"
-description: "April 4 - April 5, 2014"
+description: "April 4 - 5, 2014"
 ---
 
 #### @[Cognitect, Inc.](http://cognitect.com/contact)
