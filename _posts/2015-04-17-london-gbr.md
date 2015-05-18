@@ -11,6 +11,13 @@ uSwitch (Notcutt House), 36 Southwark Bridge Road, SE1 9EU London, United Kingdo
 
 ---
 
+#### Event Report
+
+[http://annapawlicka.com/spreading-parentheses-of-love/](http://annapawlicka.com/spreading-parentheses-of-love/)
+{: .h5 }
+
+---
+
 #### Event Description
 
 [http://www.clojurebridge.org/events/2015-04-17-london](http://www.clojurebridge.org/events/2015-04-17-london)
