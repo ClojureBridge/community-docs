@@ -13,14 +13,14 @@ description: "March 13 - 14, 2015"
 
 #### Event Report
 
-[https://groups.google.com/forum/#!searchin/clojurebridge-workshops/Nola/clojurebridge-workshops/m_y9OzB2gN0/t-xgBWmPzowJ](https://groups.google.com/forum/#!searchin/clojurebridge-workshops/Nola/clojurebridge-workshops/m_y9OzB2gN0/t-xgBWmPzowJ)
+<https://groups.google.com/forum/#!searchin/clojurebridge-workshops/Nola/clojurebridge-workshops/m_y9OzB2gN0/t-xgBWmPzowJ>
 {: .h5 }
 
 ---
 
 #### Event Description
 
-[http://www.clojurebridge.org/events/2015-03-13-austin](http://www.clojurebridge.org/events/2015-03-13-austin)
+<http://www.clojurebridge.org/events/2015-03-13-austin>
 {: .h5 }
 
 ---

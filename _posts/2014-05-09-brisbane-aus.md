@@ -13,7 +13,7 @@ ThoughtWorks Brisbane, 127 Creek St #19, Brisbane, QLD 4000, Australia
 
 #### Event Description
 
-[http://www.clojurebridge.org/events/2014-05-09-brisbane](http://www.clojurebridge.org/events/2014-05-09-brisbane)
+<http://www.clojurebridge.org/events/2014-05-09-brisbane>
 {: .h5 }
 
 ---

@@ -13,7 +13,7 @@ Level 8, 51 Pitt Street, Sydney, NSW 2000, Australia
 
 #### Event Description
 
-[http://www.clojurebridge.org/events/2014-12-19-sydney](http://www.clojurebridge.org/events/2014-12-19-sydney)
+<http://www.clojurebridge.org/events/2014-12-19-sydney>
 {: .h5 }
 
 ---

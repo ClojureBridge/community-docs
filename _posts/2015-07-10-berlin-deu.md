@@ -13,7 +13,7 @@ description: "July 10 - 11, 2015"
 
 #### Event Description
 
-[http://www.clojurebridge.org/events/2015-07-10-berlin](http://www.clojurebridge.org/events/2015-07-10-berlin)
+<http://www.clojurebridge.org/events/2015-07-10-berlin>
 {: .h5 }
 
 ---

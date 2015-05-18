@@ -13,20 +13,20 @@ Level 23, 303 Collins Street, Melbourne, VIC, 3000
 
 #### Event Report
 
-[https://groups.google.com/forum/#!topic/clojurebridge-workshops/4OOaZ8cRdl8](https://groups.google.com/forum/#!topic/clojurebridge-workshops/4OOaZ8cRdl8)
+<https://groups.google.com/forum/#!topic/clojurebridge-workshops/4OOaZ8cRdl8>
 {: .h5 }
 
 ---
 
 #### Event Description
 
-[http://www.clojurebridge.org/events/2014-08-01-melbourne-australia](http://www.clojurebridge.org/events/2014-08-01-melbourne-australia)
+<http://www.clojurebridge.org/events/2014-08-01-melbourne-australia>
 {: .h5 }
 
 ---
 
 #### Event Repository
-[https://github.com/ClojureBridgeMelbourne/ClojureBridgeMelbourneAugust2014/wiki](https://github.com/ClojureBridgeMelbourne/ClojureBridgeMelbourneAugust2014/wiki)
+<https://github.com/ClojureBridgeMelbourne/ClojureBridgeMelbourneAugust2014/wiki>
 {: .h5 }
 
 ---

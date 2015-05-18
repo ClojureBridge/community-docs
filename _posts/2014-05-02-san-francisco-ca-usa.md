@@ -13,21 +13,21 @@ description: "May 2 - 3, 2014"
 
 #### Event Report
 
-[https://groups.google.com/forum/#!topic/clojurebridge-workshops/3lBQh4dKS6Y](https://groups.google.com/forum/#!topic/clojurebridge-workshops/3lBQh4dKS6Y)
+<https://groups.google.com/forum/#!topic/clojurebridge-workshops/3lBQh4dKS6Y>
 {: .h5 }
 
 ---
 
 #### Event Description
 
-[http://www.clojurebridge.org/events/2014-05-02-san-francisco](http://www.clojurebridge.org/events/2014-05-02-san-francisco)
+<http://www.clojurebridge.org/events/2014-05-02-san-francisco>
 {: .h5 }
 
 ---
 
 #### Event Repository
 
-[https://github.com/ClojureBridge-SF](https://github.com/ClojureBridge-SF)
+<https://github.com/ClojureBridge-SF>
 {: .h5 }
 
 ---

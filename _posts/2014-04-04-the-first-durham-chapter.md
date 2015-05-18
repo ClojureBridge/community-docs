@@ -13,14 +13,14 @@ description: "April 4 - 5, 2014"
 
 #### Event Description
 
-[http://www.clojurebridge.org/events/2014-04-04-durham-nc](http://www.clojurebridge.org/events/2014-04-04-durham-nc)
+<http://www.clojurebridge.org/events/2014-04-04-durham-nc>
 {: .h5 }
 
 ---
 
 #### Event Repository
 
-[https://github.com/clojurebridge-durham](https://github.com/clojurebridge-durham)
+<https://github.com/clojurebridge-durham>
 {: .h5 }
 
 ---

@@ -13,7 +13,7 @@ description: "April 17 - 18, 2015"
 
 #### Event Description
 
-[http://www.clojurebridge.org/events/2015-04-17-portland-or](http://www.clojurebridge.org/events/2015-04-17-portland-or)
+<http://www.clojurebridge.org/events/2015-04-17-portland-or>
 {: .h5 }
 
 ---

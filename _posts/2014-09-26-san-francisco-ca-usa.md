@@ -12,14 +12,14 @@ description: "September 26 - 27, 2014"
 ---
 
 #### Event Report
-[https://groups.google.com/forum/#!topic/clojurebridge-curriculum/kEaYOOTqYCM](https://groups.google.com/forum/#!topic/clojurebridge-curriculum/kEaYOOTqYCM)
+<https://groups.google.com/forum/#!topic/clojurebridge-curriculum/kEaYOOTqYCM>
 {: .h5 }
 
 ---
 
 #### Event Description
 
-[http://www.clojurebridge.org/events/2014-09-26-san-francisco](http://www.clojurebridge.org/events/2014-09-26-san-francisco)
+<http://www.clojurebridge.org/events/2014-09-26-san-francisco>
 {: .h5 }
 
 ---

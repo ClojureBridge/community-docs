@@ -13,14 +13,14 @@ uSwitch (Notcutt House), 36 Southwark Bridge Road, SE1 9EU London, United Kingdo
 
 #### Event Report
 
-[http://annapawlicka.com/spreading-parentheses-of-love/](http://annapawlicka.com/spreading-parentheses-of-love/)
+<http://annapawlicka.com/spreading-parentheses-of-love/>
 {: .h5 }
 
 ---
 
 #### Event Description
 
-[http://www.clojurebridge.org/events/2015-04-17-london](http://www.clojurebridge.org/events/2015-04-17-london)
+<http://www.clojurebridge.org/events/2015-04-17-london>
 {: .h5 }
 
 ---
@@ -28,7 +28,7 @@ uSwitch (Notcutt House), 36 Southwark Bridge Road, SE1 9EU London, United Kingdo
 #### Event Repository
 
 ###### Exercise Examples
-[https://github.com/jr0cket/clojurebridge-london-exercise-examples](https://github.com/jr0cket/clojurebridge-london-exercise-examples)
+<https://github.com/jr0cket/clojurebridge-london-exercise-examples>
 {: .h5 }
 
 ---

@@ -13,21 +13,21 @@ description: "May 16 - May 17, 2014"
 
 #### Event Report
 
-[https://groups.google.com/forum/#!topic/clojurebridge-workshops/jvYJuR1M1vA](https://groups.google.com/forum/#!topic/clojurebridge-workshops/jvYJuR1M1vA)
+<https://groups.google.com/forum/#!topic/clojurebridge-workshops/jvYJuR1M1vA>
 {: .h5 }
 
 ---
 
 #### Event Description
 
-[http://www.clojurebridge.org/events/2014-05-16-minneapolis-mn](http://www.clojurebridge.org/events/2014-05-16-minneapolis-mn)
+<http://www.clojurebridge.org/events/2014-05-16-minneapolis-mn>
 {: .h5 }
 
 ---
 
 #### Event Repository
 
-[https://github.com/ClojureBridge-Minneapolis](https://github.com/ClojureBridge-Minneapolis)
+<https://github.com/ClojureBridge-Minneapolis>
 {: .h5 }
 
 ---

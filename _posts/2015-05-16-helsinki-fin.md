@@ -13,14 +13,14 @@ description: "May 16 - 17, 2015"
 
 #### Event Description
 
-[http://www.clojurebridge.org/events/2015-05-16-helsingfors-finland](http://www.clojurebridge.org/events/2015-05-16-helsingfors-finland)
+<http://www.clojurebridge.org/events/2015-05-16-helsingfors-finland>
 {: .h5 }
 
 ---
 
 #### Event Repository
 
-[https://github.com/metosin/clojurebridge-helsinki](https://github.com/metosin/clojurebridge-helsinki)
+<https://github.com/metosin/clojurebridge-helsinki>
 {: .h5 }
 
 ---

@@ -13,7 +13,7 @@ Merscheider Straße 3, 42699, Solingen, Germany
 
 #### Event Description
 
-[http://www.clojurebridge.org/events/2015-06-12-solingen-germany](http://www.clojurebridge.org/events/2015-06-12-solingen-germany)
+<http://www.clojurebridge.org/events/2015-06-12-solingen-germany>
 {: .h5 }
 
 ---

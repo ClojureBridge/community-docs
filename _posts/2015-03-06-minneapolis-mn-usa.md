@@ -13,14 +13,14 @@ description: "Mar 6 - Mar 7, 2015"
 
 #### Event Description
 
-[http://www.clojurebridge.org/events/2015-03-06-minneapolis](http://www.clojurebridge.org/events/2015-03-06-minneapolis)
+<http://www.clojurebridge.org/events/2015-03-06-minneapolis>
 {: .h5 }
 
 ---
 
 #### Event Repository
 
-[https://github.com/ClojureBridge-Minneapolis](https://github.com/ClojureBridge-Minneapolis)
+<https://github.com/ClojureBridge-Minneapolis>
 {: .h5 }
 
 ---
