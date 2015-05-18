@@ -27,6 +27,8 @@ uSwitch (Notcutt House), 36 Southwark Bridge Road, SE1 9EU London, United Kingdo
 
 #### Event Repository
 
+###### Exercise Examples
+[https://github.com/jr0cket/clojurebridge-london-exercise-examples](https://github.com/jr0cket/clojurebridge-london-exercise-examples)
 {: .h5 }
 
 ---

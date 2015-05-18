@@ -20,6 +20,7 @@ description: "May 29 - 30, 2015"
 
 #### Event Repository
 
+[https://github.com/clojurebridge-oresund](https://github.com/clojurebridge-oresund)
 {: .h5 }
 
 ---

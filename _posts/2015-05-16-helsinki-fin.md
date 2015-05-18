@@ -20,6 +20,7 @@ description: "May 16 - 17, 2015"
 
 #### Event Repository
 
+[https://github.com/metosin/clojurebridge-helsinki](https://github.com/metosin/clojurebridge-helsinki)
 {: .h5 }
 
 ---
