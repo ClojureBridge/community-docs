@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "San Francisco, CA, USA"
+title: "San Francisco, CA, USA - ClojureBridge Workshop for Women"
 description: "September 26 - 27, 2014"
 ---
 

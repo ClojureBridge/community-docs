@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Berlin, Germany"
+title: "Berlin, Germany - ClojureBridge Workshop for Women"
 description: "July 10 - 11, 2015"
 ---
 

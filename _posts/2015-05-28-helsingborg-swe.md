@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Helsingborg, Sweden"
+title: "Helsingborg, Sweden - ClojureBridge Øresund"
 description: "May 29 - 30, 2015"
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Melbourne, Australia"
+title: "Melbourne, Australia - ClojureBridge Melbourne"
 description: "August 15 - 16, 2014"
 ---
 

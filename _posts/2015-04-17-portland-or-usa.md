@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Portland, OR, USA"
+title: "Portland, OR, USA - ClojureBridge Portland Workshop"
 description: "April 17 - 18, 2015"
 ---
 

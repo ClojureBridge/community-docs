@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "London, UK"
+title: "London, UK - London ClojureBridge Workshop"
 description: "April 17 - 18, 2015"
 ---
 

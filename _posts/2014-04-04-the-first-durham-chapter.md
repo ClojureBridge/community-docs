@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Durham, NC, USA"
+title: "Durham, NC, USA - Inaugural ClojureBridge Workshop"
 description: "April 4 - 5, 2014"
 ---
 

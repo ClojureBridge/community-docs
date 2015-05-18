@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Edinburgh, UK"
+title: "Edinburgh, UK - ClojureBridge Edinburgh"
 description: "September 26 - 27, 2014"
 ---
 

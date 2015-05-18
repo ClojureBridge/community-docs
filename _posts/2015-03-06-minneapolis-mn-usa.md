@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Minneapolis, MN, USA"
+title: "Minneapolis, MN, USA - ClojureBridge Workshop"
 description: "Mar 6 - Mar 7, 2015"
 ---
 

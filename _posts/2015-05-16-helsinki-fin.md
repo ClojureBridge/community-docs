@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Helsinki, Finland"
+title: "Helsinki, Finland - ClojureBridge Workshop for Women"
 description: "May 16 - 17, 2015"
 ---
 

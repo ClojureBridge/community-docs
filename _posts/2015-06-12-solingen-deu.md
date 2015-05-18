@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Solingen, Germany"
+title: "Solingen, Germany - Solingen ClojureBridge Workshop"
 description: "June 12 - 13, 2015"
 ---
 
