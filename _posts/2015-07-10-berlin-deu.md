@@ -20,6 +20,7 @@ description: "July 10 - 11, 2015"
 
 #### Event Repository
 
+<https://github.com/clojurebridge-berlin>
 {: .h5 }
 
 ---

@@ -20,6 +20,7 @@ description: "July 17 - 18, 2015"
 
 #### Event Repository
 
+<https://github.com/joshhead/clojurebridge-detroit>
 {: .h5 }
 
 ---
