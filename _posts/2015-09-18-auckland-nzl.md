@@ -4,9 +4,9 @@ title: "Auckland, New Zealand - ClojureBridge Auckland"
 description: "September 18 - 19, 2015"
 ---
 
-#### @
+#### @Level 15 Chorus House
 
-Level 15 Chorus House, 66 Wyndham St, Auckland, 1010, New Zealand
+66 Wyndham St, Auckland, 1010, New Zealand
 {: .h5 }
 
 ---
