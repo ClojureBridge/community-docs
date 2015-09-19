@@ -11,6 +11,13 @@ description: "September 18 - 19, 2015"
 
 ---
 
+#### Event Report
+
+- From Twitter
+    - <https://twitter.com/ClojureBridgeKY/status/644982737930203136>
+
+---
+
 #### Event Description
 
 <http://www.clojurebridge.org/events/2015-09-18-winchester>
@@ -26,4 +33,5 @@ description: "September 18 - 19, 2015"
 
 #### Information
 
+- Twitter ID: @ClojureBridgeKY
 {: .h5 }

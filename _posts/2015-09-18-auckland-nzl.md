@@ -11,6 +11,14 @@ description: "September 18 - 19, 2015"
 
 ---
 
+#### Event Report
+
+- From Twitter
+    - <https://twitter.com/maria__geller/status/645000554905636864>
+    - <https://twitter.com/maria__geller/status/644994246492053504>
+
+---
+
 #### Event Description
 
 <http://www.clojurebridge.org/events/2015-09-18-auckland-nz>
@@ -26,4 +34,5 @@ description: "September 18 - 19, 2015"
 
 #### Information
 
+- Twitter ID: @ClojureBridgeNZ
 {: .h5 }
