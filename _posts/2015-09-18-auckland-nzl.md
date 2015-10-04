@@ -13,6 +13,9 @@ description: "September 18 - 19, 2015"
 
 #### Event Report
 
+- Learnings
+    - <https://groups.google.com/forum/#!topic/clojurebridge-workshops/Koyh5TamYQ0>
+
 - From Twitter
     - <https://twitter.com/maria__geller/status/645000554905636864>
     - <https://twitter.com/maria__geller/status/644994246492053504>
