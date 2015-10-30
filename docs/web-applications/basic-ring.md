@@ -73,7 +73,7 @@ You'll see the words in the browser.
     Explain moving parts and what the `handler` function is doing, if necessary.
 
 
-What if you want to change the words to diplay on the browser?
+What if you want to update the words being displayed in the browser?
 You may easily think of editing the handler function.
 But how can you reload the updated one?
 Unfortunately, our first example doesn't have a feature to *reload*.
