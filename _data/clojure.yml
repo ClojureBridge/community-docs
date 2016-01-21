@@ -90,6 +90,9 @@
   permalink: /docs/clojure/take/
   todo: true
 
+- title: Core Function <code>str</code>
+  permalink: /docs/clojure/str/
+
 - title: Loop <code>for</code>
   permalink: /docs/clojure/for/
 
