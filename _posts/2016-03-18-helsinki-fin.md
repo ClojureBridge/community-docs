@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Helsinki, Finland - ClojureBridge Helsinki"
+date:   2016-03-18
 description: "March 18 - 19, 2016"
 ---
 

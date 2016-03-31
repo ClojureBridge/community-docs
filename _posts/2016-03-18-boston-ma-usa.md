@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Boston, MA, USA - ClojureBridge Boston - Programming Workshop for Women"
+date:   2016-03-18
 description: "March 18 - 19, 2016"
 ---
 
@@ -25,5 +26,6 @@ description: "March 18 - 19, 2016"
 ---
 
 #### Information
+
 
 {: .h5 }
