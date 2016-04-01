@@ -1,7 +1,19 @@
-name: Community Docs
-markdown: kramdown
-pygments: true
-relative_permalinks: false
+title: ClojureBridge Community Docs
+email: info@clojurebridge.org
 baseurl: /community-docs
+twitter_username: ClojureBridge
+github_username:  ClojureBridge
 encoding: UTF-8
+
+gems:
+  - jekyll-coffeescript
+  - jekyll-paginate
+  - jekyll-gist
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+relative_permalinks: false
 port: 4444
