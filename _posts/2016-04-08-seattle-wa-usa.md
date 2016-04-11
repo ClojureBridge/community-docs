@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Seattle, WA, USA - ClojureBridge Seattle"
+date:   2016-04-08
 description: "April 08 - 09, 2016"
 ---
 
