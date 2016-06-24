@@ -38,35 +38,39 @@ Let's try anonymous functions.
 
 - even?: [http://clojuredocs.org/clojure_core/clojure.core/even_q](http://clojuredocs.org/clojure_core/clojure.core/even_q)
 
-{% highlight clojure %}
-user> (fn [coll] (filter even? coll))
-#<user$eval4837$fn__4838 user$eval4837$fn__4838@660652c5>
+Here is how we define an anonymous function:
 
-user> ; anonymous function is defined, but how can we use this?
-user> ; here's one way to use anonymous function
-user> ((fn [coll] (filter even? coll)) [1 2 3 4 5 6])
-(2 4 6)
+~~~klipse
+(fn [coll] (filter even? coll))
+~~~
 
-user> ; if we use #() literal, an anonymous function can be written like this.
-user> (#(filter even? %) [1 2 3 4 5 6])
-(2 4 6)
+here's one way to use anonymous function
 
-user> ; to use anonymous function more than once, bind it to a name.
-user> (def evens (fn [coll] (filter even? coll)))
-#'user/evens
-user> (evens [1 2 3 4 5 6])
-(2 4 6)
-{% endhighlight %}
+~~~klipse
+((fn [coll] (filter even? coll)) [1 2 3 4 5 6])
+~~~
+
+if we use #() literal, an anonymous function can be written like this:
+
+~~~klipse
+(#(filter even? %) [1 2 3 4 5 6])
+~~~
+
+to use anonymous function more than once, bind it to a name:
+
+~~~klipse
+(def evens (fn [coll] (filter even? coll)))
+(evens [1 2 3 4 5 6])
+~~~
 
 You may have thought that the function above is the equivalent to:
-{% highlight clojure %}
-user> (defn evens-by-defn
+
+~~~klipse
+(defn evens-by-defn
         [coll]
         (filter even? coll))
-#'user/evens-by-defn
-user> (evens-by-defn [1 2 3 4 5 6])
-(2 4 6)
-{% endhighlight %}
+(evens-by-defn [1 2 3 4 5 6])
+~~~
 
 However, Clojure programmers use anonymous function very often.
 Why do we need anonymous function?
@@ -82,50 +86,46 @@ Let's say we want to get the even numbers after two vectors are combined:
 
 If we use def to save the value...
 
-{% highlight clojure %}
-user> (defn evens-with-def
+~~~klipse
+(defn evens-with-def
         [vec1 vec2]
         (def combined (concat vec1 vec2))
         (filter even? combined))
-#'user/evens-with-def
-user> (evens-with-def [1 2 3] [4 5 6])
-(2 4 6)
-user> combined
-[1 2 3 4 5 6]
-{% endhighlight %}
+(evens-with-def [1 2 3] [4 5 6])
+~~~
 
 `combined` is exposed outside of our function, and this is bug-prone.
 
+~~~klipse
+[combined]
+~~~
 If we use an anonymous function...
 
-{% highlight clojure %}
-user> (defn evens-with-fn
+~~~klipse
+(defn evens-with-fn
         [vec1 vec2]
         ((fn [x] (filter even? x))
          (concat vec1 vec2)))
-#'user/evens-with-fn
-user> (evens-with-fn [1 2 3] [4 5 6])
-(2 4 6)
-{% endhighlight %}
+(evens-with-fn [1 2 3] [4 5 6])
+~~~
 
 There's no variable for a combined vector.
 
 We could also use `let`, which provides lexical binding and limits it to within the scope.
 
-{% highlight clojure %}
-user> (defn evens-with-let
+~~~klipse
+(defn evens-with-let
         [vec1 vec2]
         (let [combined-in-let (concat vec1 vec2)]
           (filter even? combined-in-let)))
-#'user/evens-with-let
-user> (evens-with-let [1 2 3] [4 5 6])
-(2 4 6)
-user> combined-in-let
-CompilerException java.lang.RuntimeException: Unable to resolve symbol: combined-in-let in this c
-ontext, compiling:(/private/var/folders/4b/c9gsjvv12tq9n4mph065qs480000gn/T/form-init632366111132
-2215411.clj:1:743)
-user> ; combined-in-let is available only in let body
-{% endhighlight %}
+(evens-with-let [1 2 3] [4 5 6])
+~~~
+
+`combined-in-let` is not exposed outside of our function:
+
+~~~klipse
+[combined-in-let]
+~~~
 
 - Advice to coaches
 
