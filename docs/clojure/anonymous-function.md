@@ -96,10 +96,11 @@ If we use def to save the value...
 
 `combined` is exposed outside of our function, and this is bug-prone.
 
-~~~klipse
-[combined]
-~~~
-If we use an anonymous function...
+<pre><code class="language-klipse" data-eval-context="expr">
+combined
+</code></pre>
+
+But, if we use an anonymous function...
 
 ~~~klipse
 (defn evens-with-fn
@@ -124,7 +125,7 @@ We could also use `let`, which provides lexical binding and limits it to within 
 `combined-in-let` is not exposed outside of our function:
 
 ~~~klipse
-[combined-in-let]
+combined-in-let
 ~~~
 
 - Advice to coaches
