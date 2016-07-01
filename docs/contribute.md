@@ -73,7 +73,7 @@ Steps:
 
   - Start the server
   
-    - Run `jekyll serve --watch`. This will start the server running on port 4444. `--watch` option reflects the changes immediately.
+    - Run `jekyll serve --incremental --watch`. This will start the server running on port 4444. `--incremental` Enable incremental build making it very fast. `--watch` option reflects the changes immediately.
     - Open your browser and go to `http://localhost:4444/community-docs/`. <br/><br/>
 
   - Document examples
