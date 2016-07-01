@@ -61,9 +61,14 @@ Steps:
 
     Add the difficulty level of the lab work: easy, intermediate, difficult. This will help attendees and coaches choose a good exercise considering their programming background. It might be fun to add "most difficult" labs for the coaches.
 
-  - Syntax highlighter
+  - Code example
 
-    For HTML, and Markdown, the site is setup to use [Pygments](http://pygments.org/docs/) for syntax highlighter. Please look at the jekyll document, [Writing posts](http://jekyllrb.com/docs/posts/), for details. Alternatively, you can embed gist by gist tag. See "Gist" section of [Templates](http://jekyllrb.com/docs/templates/).
+    Most documents uses Jekyll's syntax highlighter. Please look at the document, [Writing posts](http://jekyllrb.com/docs/posts/), for details. Alternatively, you can embed gist by gist tag. See "Gist" section of [Templates](http://jekyllrb.com/docs/templates/).
+
+    Some documents uses [Klipse](https://github.com/viebel/klipse). This klipse plugin renders the code nicely. More importantly, the klipse acually runs the code on a browser. So, when the klipse notation is used, the result will be rendered dynamically. See `docs/clojure/anonymous-function.md` and `docs/clojure/truthiness.md` on an editor (not on the browser) for syntax.
+
+    When the klipse plugin doesn't render a result as intended, try html markup. The example is around line 100 in `anonumous-function.md`, &lt;pre&gt;&lt;code class="language-klipse" data-eval-context="expr"&gt; ... &lt;/code&gt;&lt;/pre&gt;.
+
 
   - Running the Community Docs site locally
 
