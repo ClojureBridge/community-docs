@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Oulu, Finland - ClojureBridge Oulu, Finland"
+title: "Tampere, Finland - ClojureBridge Tampere, Finland"
 date:   2016-05-20
 description: "May 20 - 21, 2016"
 ---
