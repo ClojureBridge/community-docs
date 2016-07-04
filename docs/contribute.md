@@ -67,7 +67,7 @@ Steps:
 
     Some documents uses [Klipse](https://github.com/viebel/klipse). This klipse plugin renders the code nicely. More importantly, the klipse acually runs the code on a browser. So, when the klipse notation is used, the result will be rendered dynamically. See `docs/clojure/anonymous-function.md` and `docs/clojure/truthiness.md` on an editor (not on the browser) for syntax.
 
-    When the klipse plugin doesn't render a result as intended, try html markup. The example is around line 100 in `anonumous-function.md`, &lt;pre&gt;&lt;code class="language-klipse" data-eval-context="expr"&gt; ... &lt;/code&gt;&lt;/pre&gt;.
+    When the klipse plugin doesn't render a result as intended, try html markup. The example is around line 100 in `anonymous-function.md`, &lt;pre&gt;&lt;code class="language-klipse" data-eval-context="expr"&gt; ... &lt;/code&gt;&lt;/pre&gt;.
 
 
   - Running the Community Docs site locally
