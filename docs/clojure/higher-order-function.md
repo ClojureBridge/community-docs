@@ -37,38 +37,41 @@ In this example, we will create a function that does something when given two ve
     If the attendees haven't looked at the Anonymous Function section and they struggle to understand the example, go back to the Anonymous Function section.
 
 
-{% highlight clojure %}
-user> ; suppose we want to combine two vectors and take even numbers out
-user> (defn concat-evens
+Suppose we want to combine two vectors and take even numbers out:
+
+~~~klipse
+(defn concat-evens
         [vec1 vec2]
         ((fn [x] (filter even? x))
          (concat vec1 vec2)))
-#'user/concat-evens
-user> (concat-evens [1 2 3] [4 5 6])
-(2 4 6)
+(concat-evens [1 2 3] [4 5 6])
+~~~
 
-user> ; suppose we want to combine two vectors and take odd numbers out
-user> (defn concat-odds
+Suppose we want to combine two vectors and take odd numbers out:
+
+~~~klipse
+(defn concat-odds
         [vec1 vec2]
         ((fn [x] (filter odd? x))
          (concat vec1 vec2)))
-#'user/concat-odds
-user> (concat-odds [1 2 3] [4 5 6])
-(1 3 5)
+(concat-odds [1 2 3] [4 5 6])
+~~~
 
-user> ; let's see. the difference of two functions above is just even? or odd?
-user> ; what if either even? or odd? function is passed as an argument?
-user> (defn concat-some
+Let's see: the difference of two functions above is just `even?` or `odd?`. What if either `even?` or `odd?` function would be passed as an argument?
+
+~~~klipse
+(defn concat-some
         [f vec1 vec2]
         ((fn [x] (filter f x))
          (concat vec1 vec2)))
-#'user/concat-some
-user> (concat-some even? [1 2 3] [4 5 6])
-(2 4 6)
-user> (concat-some odd? [1 2 3] [4 5 6])
-(1 3 5)
-user> ; yay! we created a higher-order function. concat-some takes a function as an argument.
-{% endhighlight %}
+(concat-some even? [1 2 3] [4 5 6])
+~~~
+
+~~~klipse
+(concat-some odd? [1 2 3] [4 5 6])
+~~~
+
+Yay! we created a higher-order function: `concat-some` takes a function as an argument.
 
 As we saw above, higher-order functions are a useful way to make functions more generic.
 <br/><br/>
@@ -85,57 +88,60 @@ Let's try one more example. This example is the second type of higher-order func
 - partial: [http://clojuredocs.org/clojure_core/clojure.core/partial](http://clojuredocs.org/clojure_core/clojure.core/partial)
 
 
-{% highlight clojure %}
-user> (defn greeting-in-am [who]
+~~~klipse
+(defn greeting-in-am [who]
         (str "Good morning, " who))
-#'user/greeting-in-am
-user> (greeting-in-am "everybody")
-"Good morning, everybody"
+(greeting-in-am "everybody")
+~~~
 
-user> (defn greeting-in-pm [who]
+~~~klipse
+(defn greeting-in-pm [who]
         (str "Good afternoon, " who))
-#'user/greeting-in-pm
-user> (greeting-in-pm "everybody")
-"Good afternoon, everybody"
+(greeting-in-pm "everybody")
+~~~
 
-user> (defn greeting-anytime [who]
+~~~klipse
+(defn greeting-anytime [who]
         (str "Hello, " who))
-#'user/greeting-anytime
-user> (greeting-anytime "everybody")
-"Hello, everybody"
+(greeting-anytime "everybody")
+~~~
 
-user> ; let's see. the difference of three functions above is
-user> ; the first argument of str function only
-user> ; can we create a generalized function?
+Let's see: the difference between the three functions above is
+only the first argument of `str`. Can we create a generalized function?
 
-user> (defn greeting [when]
+~~~klipse
+(defn greeting [when]
         (case when
           :am (partial str "Good morning, ")
           :pm (partial str "Good afternoon, ")
           (partial str "Hello, ")))
-#'user/greeting
-user> (greeting :am)
-#<core$partial$fn__4190 clojure.core$partial$fn__4190@19f112e5>
-user> (greeting :pm)
-#<core$partial$fn__4190 clojure.core$partial$fn__4190@4b232f3c>
-user> (greeting :when?)
-#<core$partial$fn__4190 clojure.core$partial$fn__4190@507155fb>
 
-user> ; greeting function returns a function!
+(fn? (greeting :am))
+~~~
 
-user> ((greeting :am) "everybody, " "nobody, " "whoever")
-"Good morning, everybody, nobody, whoever"
+As you can see, `greeting` returns a function!
 
-user> ((greeting :pm) "Andy, " "Bob, " "Charlie, " "David")
-"Good afternoon, Andy, Bob, Charlie, David"
+Now, let's see it in action.
 
-user> ((greeting :hm...) "Ann, " "Beth")
-"Hello, Ann, Beth"
+With `:am`:
 
-user> ; only one greeting function covers three functions previously defined.
-user> ; additionally, now, we can pass any number of arguments.
-user> ; everything other than :am and :pm falls on the last "Hello, "
-{% endhighlight %}
+~~~klipse
+((greeting :am) "everybody, " "nobody, " "whoever")
+~~~
+
+With `:pm`:
+
+~~~klipse
+((greeting :pm) "Andy, " "Bob, " "Charlie, " "David")
+~~~
+
+With anything else:
+
+~~~klipse
+((greeting :hm...) "Ann, " "Beth")
+~~~
+
+With a single `greeting` function, we cover the three functions previously defined. Additionally, now, we can pass any number of arguments. Everything other than :am and :pm falls on the last "Hello, ".
 
 
 ### References

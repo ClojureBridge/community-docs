@@ -1,6 +1,7 @@
 .jekyll-metadata
 .ruby-version
 .ruby-gemset
+.bundle
 _site
 tmp
 .DS_Store
