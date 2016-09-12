@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "ClojureBridge Pittsburgh September 2016"
+title: "Pittsburgh, PA - ClojureBridge Pittsburgh September 2016"
 description: "September 9 - 10, 2016"
 ---
 
