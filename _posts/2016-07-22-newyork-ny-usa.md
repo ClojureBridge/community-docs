@@ -11,6 +11,14 @@ description: "July 22 - 23, 2016"
 
 ---
 
+#### Event Report
+
+- ClojureBridge Workshops mailing list<br/>
+  [Report on ClojureBridge NYV July](https://groups.google.com/d/msg/clojurebridge-workshops/a_Mhj6icOz0/2lIeM60yBQAJ)
+{: .h5 }
+
+---
+
 #### Event Description
 
 <http://www.clojurebridge.org/events/2016-07-22-new-york-ny>
