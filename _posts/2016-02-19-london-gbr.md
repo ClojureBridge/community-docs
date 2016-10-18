@@ -30,3 +30,10 @@ description: "February 19 - 20, 2016"
 
 [https://twitter.com/ClojureBridgeLN](https://twitter.com/ClojureBridgeLN)
 {: .h5 }
+
+---
+
+#### Github issue
+
+<https://github.com/ClojureBridge/Workshops/issues/27>
+{: .h5 }

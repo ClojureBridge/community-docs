@@ -34,3 +34,10 @@ description: "September 9 - 10, 2016"
 #### Information
 
 {: .h5 }
+
+---
+
+#### Github issue
+
+<https://github.com/ClojureBridge/Workshops/issues/37>
+{: .h5 }

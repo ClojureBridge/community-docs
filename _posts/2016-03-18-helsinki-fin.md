@@ -29,3 +29,10 @@ Urho Kekkosen katu 7 B, 00100 Helsinki, Finland
 #### Information
 
 {: .h5 }
+
+---
+
+#### Github issue
+
+<https://github.com/ClojureBridge/Workshops/issues/29>
+{: .h5 }

@@ -29,3 +29,10 @@ description: "March 18 - 19, 2016"
 
 
 {: .h5 }
+
+---
+
+#### Github issue
+
+<https://github.com/ClojureBridge/Workshops/issues/22>
+{: .h5 }
