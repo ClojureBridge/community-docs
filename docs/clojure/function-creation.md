@@ -56,7 +56,7 @@ We use `+` function like:
 {% highlight clojure %}
 user=> (+)            ; params []
 0
-user=> (+ 3)          ; parans [x]
+user=> (+ 3)          ; params [x]
 3
 user=> (+ 3 4)        ; params [x y]
 7
