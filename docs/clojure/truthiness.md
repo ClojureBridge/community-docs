@@ -78,6 +78,6 @@ Try the following examples and see what makes it `true` or `false`.
 
 - Advice to coaches
 
-    Pleaae explain the rule of truthy and falsey. Only false and nil are falsey. All others are truthy. If possible, let attendees create their own if/if-not examples.
+    Please explain the rule of truthy and falsey. Only false and nil are falsey. All others are truthy. If possible, let attendees create their own if/if-not examples.
 
     For attendees who have programming backgrounds, it may be interesting to talk about the result of `(if (Boolean. "false") :truthy :falsey)`.
